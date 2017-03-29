@@ -1,8 +1,8 @@
 ## IRCA in UWP
 A small project in UWP
 
-![](http://i.imgur.com/9vAAxvm.mp4)
-![](http://i.imgur.com/FOQObDx.mp4)
+![](https://github.com/vincecao/IRCA-in-UWP/blob/master/screenshots/1.gif?raw=true)
+![](https://github.com/vincecao/IRCA-in-UWP/blob/master/screenshots/2.gif?raw=true)
 
 
 ---
