@@ -38,7 +38,7 @@ namespace IRCA
 
         }
 
-        private void stepTextBlock_Tapped(object sender, TappedRoutedEventArgs e)
+        private void back_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (this.Frame.CanGoBack)
             {

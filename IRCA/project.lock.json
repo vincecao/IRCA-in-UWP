@@ -17347,7 +17347,7 @@
       ]
     },
     "Microsoft.Net.Native.Compiler/1.6.0": {
-      "sha512": "ZWKiTdHteE3oSVoD6y2wb2k//Om2M5oMx8qIHXUbYdCCXvGL8isMnlwfIKmeft3L57imGDwd8PknuE588I4KeA==",
+      "sha512": "MmdMXM5i/H6QYEk+DtCkMwIxpMbmaraYB7Sonot5GvFHsxzW3ZHS6F0gi+E3pfyrO9tLeifhElvGvW4QFK1UYw==",
       "type": "package",
       "path": "microsoft.net.native.compiler/1.6.0",
       "files": [
@@ -18242,7 +18242,7 @@
       ]
     },
     "Microsoft.Net.Native.SharedLibrary-arm/1.6.0": {
-      "sha512": "6tms4tVQoedKirFMs8q6qCLESDW3uAmFLWwUOB4lKDGtN+MHktTvA+VomsOWYtI//ByH1VSCIBvHVIqiNY8HXQ==",
+      "sha512": "ChcAhKNCiys3rLMuB+bPgEzE/9F8PRR8zDbgbY0TCN779DXI7VGcTYoJRLHI2ilaYbrQN4CPYQbaAk7B9DNQPQ==",
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-arm/1.6.0",
       "files": [
@@ -18642,7 +18642,7 @@
       ]
     },
     "Microsoft.Net.Native.SharedLibrary-x64/1.6.0": {
-      "sha512": "pLNmswGR+pzjLOgq+0oABz3e2C5XjSmTo81MFPSN9CeKyYiMb2eybU1fJRjyk86XFMfENK26gGUSVMhAo4zH/g==",
+      "sha512": "iGRwIqFwc2zH1iRjjWKzVHcu9Ri2A/5F9Zozu/BwtVaBYv2bc+mPHzfEg2dTeE5IrZ9jDqPOUCPXChHxirQ2bg==",
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-x64/1.6.0",
       "files": [
@@ -19042,7 +19042,7 @@
       ]
     },
     "Microsoft.Net.Native.SharedLibrary-x86/1.6.0": {
-      "sha512": "AC1O3na4oqgWdvjoMjVPvt2vCO9VESTkArknbTlep5NWVRdMU2nay4XHYWBleOhweE2kw52kJHv1BGN0dcXjhQ==",
+      "sha512": "peP8zi7V5K7I8bSH3m1aIW4syZahCenajymxymU4eCIDhPFPz7ZwQB8IoFb5M2Y1DTJPKGbXuPd2MV3x4eFMeg==",
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-x86/1.6.0",
       "files": [

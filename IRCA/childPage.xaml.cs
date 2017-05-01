@@ -23,7 +23,7 @@ namespace IRCA
         }
 
         //read image file
-        private async System.Threading.Tasks.Task gerImageListAsync()
+        private async System.Threading.Tasks.Task getImageListAsync()
         {
             App.imageArr.Clear();
             try
@@ -46,7 +46,7 @@ namespace IRCA
         private async void doShowImage()
         {
             data = new List<MyImage>();
-            await gerImageListAsync();
+            await getImageListAsync();
 
             //data.Add(new MyImage()
             //{

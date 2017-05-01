@@ -20,13 +20,13 @@
         </Grid>
 
         <Grid Height="50"  Grid.Row="1" Grid.Column="0" Background="{StaticResource SystemControlBackgroundAccentBrush}" >
-            <Button x:ConnectionId='4' Name="addObjectBtn" 
+            <Button x:ConnectionId='4' Name="backBtn" 
                         Foreground="White" 
                         VerticalAlignment="Center" 
                         HorizontalAlignment="Left"
                         Width="75"
                         Background="{StaticResource SystemControlBackgroundAccentBrush}"
-                                                     >
+                                            >
                 <StackPanel>
                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE112;" />
                     <TextBlock Text="Back"/>

@@ -12,4 +12,15 @@
     <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
     <UseEmulator>false</UseEmulator>
   </PropertyGroup>
+  <PropertyGroup>
+    <Source>C:\Users\qq234\Desktop\LOGO.png</Source>
+    <SmallTileSource>C:\Users\qq234\Desktop\LOGO.png</SmallTileSource>
+    <MediumTileSource>C:\Users\qq234\Desktop\LOGO.png</MediumTileSource>
+    <WideTileSource>C:\Users\qq234\Desktop\LOGO.png</WideTileSource>
+    <LargeTileSource>C:\Users\qq234\Desktop\LOGO.png</LargeTileSource>
+    <AppIconSource>C:\Users\qq234\Desktop\LOGO.png</AppIconSource>
+    <SplashScreenSource>C:\Users\qq234\Desktop\LOGO.png</SplashScreenSource>
+    <BadgeLogoSource>C:\Users\qq234\Desktop\LOGO.png</BadgeLogoSource>
+    <PackageLogoSource>C:\Users\qq234\Desktop\LOGO.png</PackageLogoSource>
+  </PropertyGroup>
 </Project>

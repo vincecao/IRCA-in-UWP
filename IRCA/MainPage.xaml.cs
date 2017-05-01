@@ -42,9 +42,7 @@ namespace IRCA
             }
             else if (ParentListBoxItem.IsSelected)
             {
-
-                InputTextDialogAsync("Please enter the password: ");
-
+                passwdDialogAsync("Please enter the password: ");
             }
             else if (ShareListBoxItem.IsSelected)
             {
@@ -58,7 +56,7 @@ namespace IRCA
             }
         }
 
-        private async void InputTextDialogAsync(string title)
+        private async void passwdDialogAsync(string title)
         {
             TextBox inputTextBox = new TextBox();
             inputTextBox.AcceptsReturn = false;
