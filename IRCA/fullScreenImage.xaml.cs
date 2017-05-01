@@ -32,7 +32,8 @@ namespace IRCA
         {
             base.OnNavigatedTo(e);
             JsonFile = "myconfig_" + App._id + ".json";
-            read = await LoadFromJsonAsync();
+            StorageFolder storageFolder = await ApplicationData.Current.LocalFolder.GetFolderAsync("Save");
+            read = await LoadFromJsonAsync(JsonFile, storageFolder);
 
             FullScreenImage.Source = new BitmapImage(new Uri(App.imageSource));
 
@@ -47,22 +48,22 @@ namespace IRCA
             
         }
 
-        public async Task<readItems> LoadFromJsonAsync()
+        //load json
+        public async Task<readItems> LoadFromJsonAsync(string JsonFile, StorageFolder storageFolder)
         {
-            string JsonString = await DeserializeFileAsync(JsonFile);
+            string JsonString = await DeserializeFileAsync(JsonFile, storageFolder);
             if (JsonString != null)
                 return JsonConvert.DeserializeObject<readItems>(JsonString);
             return null;
         }
 
         //read json
-        private static async Task<string> DeserializeFileAsync(string fileName)
+        private static async Task<string> DeserializeFileAsync(string JsonFile, StorageFolder storageFolder)
         {
             try
             {
-                StorageFolder storageFolder = await ApplicationData.Current.LocalFolder.GetFolderAsync("Save");
                 storageFolder = await storageFolder.GetFolderAsync("Json");
-                StorageFile localFile = await storageFolder.GetFileAsync(fileName);
+                StorageFile localFile = await storageFolder.GetFileAsync(JsonFile);
                 return await FileIO.ReadTextAsync(localFile);
             }
             catch (FileNotFoundException)
@@ -73,20 +74,19 @@ namespace IRCA
 
         private async void CanvasGird_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-
             try
             {
                 PointerPoint pt = e.GetCurrentPoint(CanvasGird);
                 var x = (int)pt.Position.X;
                 var y = (int)pt.Position.Y;
 
+                
                 await matchReadedJsonAsync(x, y);
             }
             catch
             {
 
             }
-
         }
 
         private async Task matchReadedJsonAsync(int x, int y)
@@ -102,24 +102,23 @@ namespace IRCA
             {
                 coordinateLabel.Text = (int)x / App._accu + "," + (int)y / App._accu + " " + name;
                 nameTextBlock.Text = name;
-                await Play(name);
-            }
 
-            
+                StorageFolder storageFolder = await ApplicationData.Current.LocalFolder.GetFolderAsync("Save");
+                storageFolder = await storageFolder.GetFolderAsync("Audio");
+                await Play(name, storageFolder);
+            }           
         }
 
         //read m4a audio
-        private async Task Play(string audioFilename)
+        private async Task Play(string audioFilename, StorageFolder storageFolder)
         {
             MediaElement playback = new MediaElement();
-            StorageFolder storageFolder = await ApplicationData.Current.LocalFolder.GetFolderAsync("Save");
-            storageFolder = await storageFolder.GetFolderAsync("Audio");
+            
             StorageFile file = await storageFolder.GetFileAsync(audioFilename + ".m4a");
 
             var stream = await file.OpenAsync(FileAccessMode.Read);
             playback.SetSource(stream, file.ContentType);
             playback.Play();
         }
-
     }
 }

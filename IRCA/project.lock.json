@@ -26043,10 +26043,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\qq234\\Documents\\Visual Studio 2017\\Projects\\IRCA\\IRCA\\IRCA.csproj",
+      "projectUniqueName": "C:\\Users\\qq234\\Documents\\GitHub\\IRCA-in-UWP\\IRCA\\IRCA.csproj",
       "projectName": "IRCA",
-      "projectPath": "C:\\Users\\qq234\\Documents\\Visual Studio 2017\\Projects\\IRCA\\IRCA\\IRCA.csproj",
-      "projectJsonPath": "C:\\Users\\qq234\\Documents\\Visual Studio 2017\\Projects\\IRCA\\IRCA\\project.json",
+      "projectPath": "C:\\Users\\qq234\\Documents\\GitHub\\IRCA-in-UWP\\IRCA\\IRCA.csproj",
+      "projectJsonPath": "C:\\Users\\qq234\\Documents\\GitHub\\IRCA-in-UWP\\IRCA\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

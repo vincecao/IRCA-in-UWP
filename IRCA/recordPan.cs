@@ -66,7 +66,6 @@ namespace IRCA
 
         public async void Record()
         {
-            await init();
             await capture.StartRecordToStreamAsync(MediaEncodingProfile.CreateM4a(AudioEncodingQuality.Auto), buffer);
             if (Recording) throw new InvalidOperationException("cannot excute two records at the same time");
             Recording = true;
@@ -78,19 +77,23 @@ namespace IRCA
             await capture.StopRecordAsync();
             Recording = false;
 
-
             IRandomAccessStream audio = buffer.CloneStream();
             if (audio == null) throw new ArgumentNullException("buffer");
-            StorageFolder storageFolder = await ApplicationData.Current.LocalFolder.CreateFolderAsync("Save", CreationCollisionOption.OpenIfExists);
-            storageFolder = await storageFolder.CreateFolderAsync("Audio", CreationCollisionOption.OpenIfExists);
+            StorageFolder storageFolder = 
+                await ApplicationData.Current.LocalFolder.CreateFolderAsync("Save", CreationCollisionOption.OpenIfExists);
+            storageFolder = 
+                await storageFolder.CreateFolderAsync("Audio", CreationCollisionOption.OpenIfExists);
+
             if (!string.IsNullOrEmpty(filename))
             {
                 StorageFile original = await storageFolder.GetFileAsync(filename);
                 await original.DeleteAsync();
             }
 
-            StorageFile storageFile = await storageFolder.CreateFileAsync(audioFilename, CreationCollisionOption.ReplaceExisting);
+            StorageFile storageFile = 
+                await storageFolder.CreateFileAsync(audioFilename, CreationCollisionOption.ReplaceExisting);
             filename = storageFile.Name;
+
             using (IRandomAccessStream fileStream = await storageFile.OpenAsync(FileAccessMode.ReadWrite))
             {
                 await RandomAccessStream.CopyAndCloseAsync(audio.GetInputStreamAt(0), fileStream.GetOutputStreamAt(0));

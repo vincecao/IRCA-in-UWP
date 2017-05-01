@@ -5,9 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Devices.Input;
 using Windows.Foundation;
-using Windows.Graphics.Imaging;
 using Windows.Storage;
-using Windows.Storage.Streams;
 using Windows.UI;
 using Windows.UI.Input;
 using Windows.UI.Input.Inking;
@@ -15,7 +13,6 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Shapes;
 
@@ -54,7 +51,6 @@ namespace IRCA
         public parentPage()
         {
             this.InitializeComponent();
-
             initObjectPosition();
         }
 
@@ -90,20 +86,16 @@ namespace IRCA
             autoSuggestBox.ItemsSource = filtered;
         }
 
-        private void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        private async void AutoSuggestBox_QuerySubmittedAsync(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
-            if(nameTextBox.Text != "")
+            if (nameTextBox.Text != "")
             {
-                
                 num++;
-                
 
                 if (args.ChosenSuggestion != null)
                 {
                     objectArr[num - 1] = args.ChosenSuggestion.ToString();
-
                 }
-
                 else
                 {
                     objectArr[num - 1] = sender.Text;
@@ -111,18 +103,18 @@ namespace IRCA
 
                 nameTextBox.Text = "";
 
-                recordPan = new recordPan(objectArr[num - 1]); 
+                recordPan = new recordPan(objectArr[num - 1]);
+                await recordPan.init();
+
                 Record.Visibility = Visibility.Visible;
                 suggestionBox_stackPanel.Visibility = Visibility.Collapsed;
             }
-            
+
         }
 
         //record        
-        private void Record_Click(object sender, RoutedEventArgs e)
+        private void Record_ClickAsync(object sender, RoutedEventArgs e)
         {
-            
-
             if (recordPan.Recording)
             {
                 recordPan.Stop();
@@ -135,13 +127,11 @@ namespace IRCA
             }
             else
             {
+                
                 recordPan.Record();
                 Record.Icon = new SymbolIcon(Symbol.Stop);
             }
         }
-
-        //finish record code
-
 
         //create canvas controls with pointerhandler
         private void createInkControl()
@@ -169,8 +159,6 @@ namespace IRCA
 
                 if (num == objectMax){addObjectBtn.Visibility = Visibility.Collapsed;}
             }
-            
-
         }
 
         #region PointerEvents
@@ -287,57 +275,49 @@ namespace IRCA
             }          
         }        
 
-        //tap clear btn
         private void deleteBtn_Click(object sender, RoutedEventArgs e)
         {
             doClear();
         }
 
-        //save btn action
-        private async void saveBtn_Click(object sender, RoutedEventArgs e)
+        private void saveBtn_Click(object sender, RoutedEventArgs e)
         {
-            //try
-            //{
-            //    StorageFolder storagefolder = await ApplicationData.Current.LocalFolder.GetFolderAsync("Save");
-            //    storagefolder = await storagefolder.GetFolderAsync("Image");
+            doCreateItems();           
+        }
 
-            //    var files = await storagefolder.GetFilesAsync();
-            //    imageId = files.Count;                
-            //}
-            //catch
-            //{
-
-            //}
-
-            var imageId = (int)ApplicationData.Current.LocalSettings.Values["ImageNumber"];
-
+        private void doCreateItems()
+        {
             try
             {
-                App.imageArr.Add(imageId + "pic");
+                var imageId = (int)ApplicationData.Current.LocalSettings.Values["ImageNumber"];
+
+                App.imageArr.Add(imageId + "_Picture");
 
                 Items items = new Items(imageId, objectArr, objectData);
                 itemsList.Add(items);
 
-                //save as json
-                string json = JsonConvert.SerializeObject(items);
-                StorageFolder storageFolder = await ApplicationData.Current.LocalFolder.CreateFolderAsync("Save", CreationCollisionOption.OpenIfExists);
-                storageFolder = await storageFolder.CreateFolderAsync("Json", CreationCollisionOption.OpenIfExists);
-                var file = await storageFolder.CreateFileAsync("myconfig_" + imageId + ".json", CreationCollisionOption.ReplaceExisting); 
-                await FileIO.WriteTextAsync(file, json);//out put as json
-
-                //output image file
-                await items.SaveBitmapToFileAsync(App.image, imageId + "pic");
-                
-                //output as txt file
-                //await items.storeObjectData(imageId + "", objectData); 
-
+                doSave(items, imageId);
                 doClear();
+
                 ApplicationData.Current.LocalSettings.Values["ImageNumber"] = imageId + 1;
             }
             catch
             {
 
             }
+        }
+
+        private async void doSave(Items items, int imageId)
+        {
+            //save as json
+            string json = JsonConvert.SerializeObject(items);
+            await items.SaveJsonToFileAsync(imageId, json);
+
+            //output image file
+            await items.SaveBitmapToFileAsync(App.image, imageId + "_Picture");
+
+            //output as txt file
+            //await items.SaveTxtDataToFileAsync(imageId + "", objectData); 
         }
 
         private void doClear()

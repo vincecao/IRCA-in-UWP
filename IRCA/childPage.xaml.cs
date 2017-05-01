@@ -34,9 +34,8 @@ namespace IRCA
                 //for (int i = 0; i < files.Count; i++)
                 for (int i = 0; i < (int)ApplicationData.Current.LocalSettings.Values["ImageNumber"]; i++)
                 {
-                    App.imageArr.Add(i+"pic");
-                }
-                
+                    App.imageArr.Add(i+"_Picture");
+                }               
             }
             catch
             {
@@ -85,8 +84,6 @@ namespace IRCA
             App._id = data.IndexOf(e.ClickedItem as MyImage);
             
             App.imageSource = (e.ClickedItem as MyImage).ImageUrl;
-
-
 
             this.Frame.Navigate(typeof(fullScreenImage));
         }

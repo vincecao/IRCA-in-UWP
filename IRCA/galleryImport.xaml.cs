@@ -15,7 +15,6 @@ namespace IRCA
         public galleryImport()
         {
             this.InitializeComponent();
-
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -24,7 +23,7 @@ namespace IRCA
             doPickImage();
         }
 
-            private async void doPickImage()
+        private async void doPickImage()
         {
             var openPicker = new FileOpenPicker
             {
@@ -38,17 +37,13 @@ namespace IRCA
             {
                 await ProcessFile(file);
             }
-            else
-            {
-                
-            }
         }
 
         private async Task ProcessFile(StorageFile file)
         {
             if (file != null)
             {
-                var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+                var stream = await file.OpenAsync(FileAccessMode.Read);
                 //using writeableBitmap
                 BitmapDecoder decoder = await BitmapDecoder.CreateAsync(stream);
                 App.image = new WriteableBitmap((int)decoder.PixelWidth, (int)decoder.PixelHeight);

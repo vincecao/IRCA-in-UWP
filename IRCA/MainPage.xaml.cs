@@ -42,7 +42,7 @@ namespace IRCA
             }
             else if (ParentListBoxItem.IsSelected)
             {
-                passwdDialogAsync("Please enter the password: ");
+                passwdDialogAsync("Please enter the password: ", Windows.Storage.ApplicationData.Current.LocalSettings.Values["MyPassSetting"]?.ToString());
             }
             else if (ShareListBoxItem.IsSelected)
             {
@@ -56,21 +56,24 @@ namespace IRCA
             }
         }
 
-        private async void passwdDialogAsync(string title)
+        private async void passwdDialogAsync(string title, string passWord)
         {
-            TextBox inputTextBox = new TextBox();
-            inputTextBox.AcceptsReturn = false;
-            inputTextBox.Height = 32;
-            ContentDialog dialog = new ContentDialog();
-            dialog.Content = inputTextBox;
-            dialog.Title = title;
-            dialog.IsSecondaryButtonEnabled = true;
-            dialog.PrimaryButtonText = "Enter";
-            dialog.SecondaryButtonText = "Cancel";
+            TextBox inputTextBox = new TextBox()
+            {
+                AcceptsReturn = false,
+                Height = 32
+            };
 
-            App.passWord = Windows.Storage.ApplicationData.Current.LocalSettings.Values["MyPassSetting"]?.ToString();
+            ContentDialog dialog = new ContentDialog()
+            {
+                Content = inputTextBox,
+                Title = title,
+                IsSecondaryButtonEnabled = true,
+                PrimaryButtonText = "Enter",
+                SecondaryButtonText = "Cancel"
+            };
 
-            if (await dialog.ShowAsync() == ContentDialogResult.Primary && inputTextBox.Text == App.passWord)
+            if (await dialog.ShowAsync() == ContentDialogResult.Primary && inputTextBox.Text == passWord)
             {
                 headerTitle.Text = "Parent Configuration";
                 myFrame.Navigate(typeof(parentPage));
