@@ -13,7 +13,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <RelativePanel Background="{ThemeResource CalendarViewSelectedHoverBorderBrush}" Height="45">
+        <RelativePanel Background="{ThemeResource CalendarViewSelectedHoverBorderBrush}" 
+                       Height="45">
             <Button VerticalAlignment="Stretch" 
                     HorizontalAlignment="Stretch" 
                     Name="HamburgerButton" 
@@ -21,11 +22,19 @@
                     Height="45"
                     Content="&#xE700;"
                     FontSize="28"
-                    Click="HamburgerButton_Click" Background="{ThemeResource SystemControlBackgroundAccentBrush}"/>
-            <TextBlock Name="headerTitle" Text="Child" FontSize="28" RelativePanel.RightOf="HamburgerButton" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    Click="HamburgerButton_Click" 
+                    Background="{ThemeResource SystemControlBackgroundAccentBrush}"/>
+            <TextBlock Name="headerTitle" 
+                       Text="Child" 
+                       FontSize="28" 
+                       RelativePanel.RightOf="HamburgerButton" 
+                       Margin="10" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"/>
         </RelativePanel>
         
-        <SplitView Name="MySplitView" 
+        <SplitView Name="MySplitView"
+                   IsPaneOpen="True"
                    Grid.Row="1" 
                    DisplayMode="CompactOverlay" 
                    OpenPaneLength="150" 
@@ -40,29 +49,61 @@
 
                     <ListBoxItem Name="ChildListBoxItem">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xED54;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Child" FontSize="22" Margin="15,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       Text="&#xED54;" 
+                                       FontSize="25" 
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="Child" 
+                                       FontSize="22" 
+                                       Margin="15,0,0,0" 
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"/>
                         </StackPanel>
                     </ListBoxItem>
 
                     <ListBoxItem Name="ParentListBoxItem">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xED53;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Parent" FontSize="22" Margin="15,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       Text="&#xED53;" 
+                                       FontSize="25" 
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="Parent" 
+                                       FontSize="22" 
+                                       Margin="15,0,0,0" 
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"/>
                         </StackPanel>
                     </ListBoxItem>
 
                     <ListBoxItem Name="ShareListBoxItem">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xECF1;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Share" FontSize="22" Margin="15,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       Text="&#xECF1;" 
+                                       FontSize="25" 
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="Share" 
+                                       FontSize="22" 
+                                       Margin="15,0,0,0" 
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"/>
                         </StackPanel>
                     </ListBoxItem>
 
                     <ListBoxItem Name="SettingListBoxItem">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE90F;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <TextBlock Text="Setting" FontSize="22" Margin="15,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" 
+                                       Text="&#xE90F;" 
+                                       FontSize="25" 
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="Setting" 
+                                       FontSize="22" 
+                                       Margin="15,0,0,0" 
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"/>
                         </StackPanel>
                     </ListBoxItem>
 

@@ -8,6 +8,33 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Rectangle Fill="yellow"/>
+        <Rectangle Fill="gray"/>
+        <StackPanel>
+            <TextBlock Text="Please copy the path and open in folder. Move the entire Save Folder. All the files in this device is well design to share with others."
+                       Foreground="White"
+                       Style="{StaticResource HeaderTextBlockStyle}"
+                       Margin="35"
+                       HorizontalAlignment="Left"/>
+            <Grid Margin="35">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Foreground="White"
+                        Background="Red"
+                        Content="Copy"
+                        Margin="15"
+                        VerticalAlignment="Center"
+                        Tapped="Button_Tapped"/>
+                <TextBox Name="FolderPath"
+                         Grid.Column="1"
+                         Margin="0, 35, 35, 35" 
+                         Foreground="White"
+                         HorizontalAlignment="Stretch"
+                         TextWrapping="Wrap" GotFocus="FolderPath_GotFocus"
+                         />
+            </Grid>
+        </StackPanel>
     </Grid>
 </Page>

@@ -13,14 +13,14 @@
     <UseEmulator>false</UseEmulator>
   </PropertyGroup>
   <PropertyGroup>
-    <Source>C:\Users\qq234\Desktop\LOGO.png</Source>
-    <SmallTileSource>C:\Users\qq234\Desktop\LOGO.png</SmallTileSource>
-    <MediumTileSource>C:\Users\qq234\Desktop\LOGO.png</MediumTileSource>
-    <WideTileSource>C:\Users\qq234\Desktop\LOGO.png</WideTileSource>
-    <LargeTileSource>C:\Users\qq234\Desktop\LOGO.png</LargeTileSource>
-    <AppIconSource>C:\Users\qq234\Desktop\LOGO.png</AppIconSource>
-    <SplashScreenSource>C:\Users\qq234\Desktop\LOGO.png</SplashScreenSource>
-    <BadgeLogoSource>C:\Users\qq234\Desktop\LOGO.png</BadgeLogoSource>
-    <PackageLogoSource>C:\Users\qq234\Desktop\LOGO.png</PackageLogoSource>
+    <Source>C:\Users\qq234\Desktop\IRCA.png</Source>
+    <SmallTileSource>C:\Users\qq234\Desktop\IRCA.png</SmallTileSource>
+    <MediumTileSource>C:\Users\qq234\Desktop\IRCA.png</MediumTileSource>
+    <WideTileSource>C:\Users\qq234\Desktop\IRCA.png</WideTileSource>
+    <LargeTileSource>C:\Users\qq234\Desktop\IRCA.png</LargeTileSource>
+    <AppIconSource>C:\Users\qq234\Desktop\IRCA.png</AppIconSource>
+    <SplashScreenSource>C:\Users\qq234\Desktop\IRCA.png</SplashScreenSource>
+    <BadgeLogoSource>C:\Users\qq234\Desktop\IRCA.png</BadgeLogoSource>
+    <PackageLogoSource>C:\Users\qq234\Documents\未标题-1.png</PackageLogoSource>
   </PropertyGroup>
 </Project>

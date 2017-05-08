@@ -95,5 +95,29 @@ namespace IRCA
         {
             resetDataFlyout.Hide();
         }
+
+        private void cancelResetCacheBtn_Click(object sender, RoutedEventArgs e)
+        {
+            resetCacheDataFlyout.Hide();
+        }
+
+        private async void resetCacheDataBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ApplicationData.Current.LocalSettings.Values["ImageNumber"] = 0;
+
+            StorageFolder storageFolder = await ApplicationData.Current.LocalFolder.GetFolderAsync("Cache");
+
+            try
+            {
+                await storageFolder.DeleteAsync(StorageDeleteOption.PermanentDelete);
+            }
+            catch
+            {
+
+            }
+
+            
+            resetCacheDataFlyout.Hide();
+        }
     }
 }

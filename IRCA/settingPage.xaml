@@ -29,6 +29,50 @@
                 </Flyout>
             </Button.Flyout>
         </Button>
+
+        <TextBlock Text="Clear the cache" Style="{StaticResource SubheaderTextBlockStyle}" Margin="30,50,0,0"/>
+        <Button Name="recCacheBtn" 
+                Margin="30,20,0,0"
+                    HorizontalAlignment="Left"                     
+                    VerticalAlignment="Center" 
+                    Background="Green"
+                    Foreground="White"
+                    Width="auto">
+            <StackPanel Orientation="Horizontal">
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEBC4;" />
+                
+                <TextBlock Text="Reset" Margin="10,0,0,0"/>
+            </StackPanel>
+            <Button.Flyout>
+                <Flyout x:Name="resetCacheDataFlyout">
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Are you sure to clear all data in the child-mode? " Margin="0,0,0,10" HorizontalAlignment="Center"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Name="resetCacheDataBtn" 
+                                            Click="resetCacheDataBtn_Click" 
+                                            Margin="0,0,30,0"
+                                            Background="Red"
+                                            Foreground="White">
+                                <StackPanel Orientation="Horizontal">
+                                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE0E7;" />
+                                    <TextBlock Text="YES" VerticalAlignment="Center" Margin="5"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Name="cancelResetCacheBtn" 
+                                            Click="cancelResetCacheBtn_Click"
+                                            Margin="30,0,0,0">
+                                <StackPanel Orientation="Horizontal">
+                                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE10A;" />
+                                    <TextBlock Text="NO" VerticalAlignment="Center" Margin="5"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Flyout>
+            </Button.Flyout>
+        </Button>
+
+
         <TextBlock Text="Clear the data" Style="{StaticResource SubheaderTextBlockStyle}" Margin="30,50,0,0"/>
         <Button Name="recBtn" 
                 Margin="30,20,0,0"
@@ -69,5 +113,6 @@
                 </Flyout>
             </Button.Flyout>
         </Button>
+        
     </StackPanel>
 </Page>

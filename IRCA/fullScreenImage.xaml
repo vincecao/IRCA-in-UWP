@@ -10,50 +10,79 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.ColumnSpan="2">
-            
-        </Grid>
-
-        <Grid Height="50"  Grid.Row="1" Grid.Column="0" Background="{StaticResource SystemControlBackgroundAccentBrush}" >
+        <Grid Name="StatusGrid"
+              Height="35"  
+              Grid.Row="0"
+              Background="{StaticResource SystemControlBackgroundAccentBrush}" >
             <Button Name="backBtn" 
                         Foreground="White" 
                         VerticalAlignment="Center" 
                         HorizontalAlignment="Left"
-                        Width="75"
                         Background="{StaticResource SystemControlBackgroundAccentBrush}"
                         Tapped="back_Tapped">
-                <StackPanel>
+                <StackPanel Orientation="Horizontal">
                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE112;" />
-                    <TextBlock Text="Back"/>
+                    <TextBlock Text="Back" Margin="5,0,0,0"/>
                 </StackPanel>
             </Button>
 
-            <TextBlock x:Name="nameTextBlock" Foreground="white" Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="nameTextBlock" 
+                       Foreground="white" 
+                       Text="123" 
+                       Style="{StaticResource TitleTextBlockStyle}" 
+                       HorizontalAlignment="Center"/>
+
+            <Button Name="HideBtn" 
+                        Foreground="White" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Right"
+                        Background="{StaticResource SystemControlBackgroundAccentBrush}"
+                        Tapped="HideBtn_Tapped">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Hide" Margin="0,0,5,0"/>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70E;" />
+                </StackPanel>
+            </Button>
         </Grid>
 
-        <Grid Grid.Row="2" Grid.Column="0" >
+        <Grid Grid.Row="1">
             <Grid>
-                <Image Visibility="Visible" 
+                <ScrollViewer Name="scrollViewer" 
+                              MinZoomFactor="0.6"
+                              MaxZoomFactor="2"
+                              ZoomMode="Enabled"
+                              VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Auto"
+                              VerticalAlignment="Stretch" 
+                              HorizontalAlignment="Stretch">
+                    <Image Visibility="Visible" 
                        Name="FullScreenImage" 
-                       VerticalAlignment="Stretch" 
-                       HorizontalAlignment="Stretch" 
-                       Stretch="Uniform"/>
-                
-                <Grid Background="Transparent" 
-                      Name="CanvasGird" 
-                      HorizontalAlignment="Stretch" 
-                      VerticalAlignment="Stretch"
-                      PointerPressed="CanvasGird_PointerPressed"/>
-
+                       Stretch="Uniform"
+                       PointerPressed="CanvasGird_PointerPressed"/>
+                </ScrollViewer>
             </Grid>
         </Grid>
-
-        <StackPanel Grid.Row="3" Grid.Column="0">
+        
+        <Grid Grid.Row="1">
+            <Button Name="ShowBtn" 
+                    Visibility="Collapsed"
+                        Foreground="White" 
+                        VerticalAlignment="Top" 
+                        HorizontalAlignment="Right"
+                        Background="{StaticResource SystemControlBackgroundAccentBrush}"
+                        Tapped="ShowBtn_Tapped">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Show" Margin="0,0,5,0"/>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70D;" />
+                </StackPanel>
+            </Button>
+        </Grid>
+        
+        <StackPanel Grid.Row="2" Grid.Column="0">
             <TextBlock Name="coordinateLabel" Style="{StaticResource CaptionTextBlockStyle}" Text="x:0 y:0"/>
         </StackPanel>
 

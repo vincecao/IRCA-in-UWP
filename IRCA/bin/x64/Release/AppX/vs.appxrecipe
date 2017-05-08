@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-7IMCGLT</Machine>
+    <WindowsUser>qq234</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>bde92871-e2bd-46d0-9726-64a50d54fc8d</PackageIdentityName>
+    <PackageIdentityPublisher>CN=qq234</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\obj\x64\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>6B69A0838BEEEE74755F32FB95BC46584239FFD15D2FDBC64CCE851CFE872207</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>bde92871-e2bd-46d0-9726-64a50d54fc8d_1.0.0.0_x64__jnbk6k6zrnp4j</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>bde92871-e2bd-46d0-9726-64a50d54fc8d_jnbk6k6zrnp4j!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>bde92871-e2bd-46d0-9726-64a50d54fc8d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=qq234</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-08T08:52:20.716</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-21T13:02:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-21T13:02:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-21T13:02:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-21T13:02:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+      <Modified>2016-06-13T13:46:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\IRCA.dll">
+      <PackagePath>IRCA.dll</PackagePath>
+      <Modified>2017-05-08T08:52:18.375</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\IRCA.exe">
+      <PackagePath>IRCA.exe</PackagePath>
+      <Modified>2017-05-08T08:52:20.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\IRCA.pdb">
+      <PackagePath>IRCA.pdb</PackagePath>
+      <Modified>2017-05-08T08:52:20.611</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2016-08-09T00:14:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2016-08-09T00:14:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-08T08:49:55.129</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Robmikh.CompositionSurfaceFactory.dll">
+      <PackagePath>Robmikh.CompositionSurfaceFactory.dll</PackagePath>
+      <Modified>2017-02-08T14:43:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\Robmikh.CompositionSurfaceFactory.winmd">
+      <PackagePath>Robmikh.CompositionSurfaceFactory.winmd</PackagePath>
+      <Modified>2017-02-08T14:43:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\vstest.executionengine.WindowsPhone.dll">
+      <PackagePath>vstest.executionengine.WindowsPhone.dll</PackagePath>
+      <Modified>2017-02-08T12:01:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\vstest_executionengine_platformbridge.dll">
+      <PackagePath>vstest_executionengine_platformbridge.dll</PackagePath>
+      <Modified>2017-02-08T12:01:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\vstest_executionengine_platformbridge.winmd">
+      <PackagePath>vstest_executionengine_platformbridge.winmd</PackagePath>
+      <Modified>2017-02-08T12:01:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\_Resources\0.rsrc">
+      <PackagePath>_Resources\0.rsrc</PackagePath>
+      <Modified>2017-05-08T08:50:44.344</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\_Resources\1.rsrc">
+      <PackagePath>_Resources\1.rsrc</PackagePath>
+      <Modified>2017-05-08T08:50:44.361</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\_Resources\2.rsrc">
+      <PackagePath>_Resources\2.rsrc</PackagePath>
+      <Modified>2017-05-08T08:50:44.367</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\_Resources\3.rsrc">
+      <PackagePath>_Resources\3.rsrc</PackagePath>
+      <Modified>2017-05-08T08:50:44.368</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\_Resources\4.rsrc">
+      <PackagePath>_Resources\4.rsrc</PackagePath>
+      <Modified>2017-05-08T08:50:44.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\_Resources\5.rsrc">
+      <PackagePath>_Resources\5.rsrc</PackagePath>
+      <Modified>2017-05-08T08:50:44.370</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\_Resources\6.rsrc">
+      <PackagePath>_Resources\6.rsrc</PackagePath>
+      <Modified>2017-05-08T08:50:44.377</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Release\ilc\_Resources\index.txt">
+      <PackagePath>_Resources\index.txt</PackagePath>
+      <Modified>2017-05-08T08:50:44.378</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\qq234\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx">
+      <Name>Microsoft.NET.Native.Framework.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\qq234\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\qq234\.nuget\packages\microsoft.net.native.sharedlibrary-x64\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx">
+      <Name>Microsoft.NET.Native.Framework.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\qq234\.nuget\packages\microsoft.net.native.sharedlibrary-x64\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\qq234\.nuget\packages\microsoft.net.native.sharedlibrary-arm\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx">
+      <Name>Microsoft.NET.Native.Framework.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\qq234\.nuget\packages\microsoft.net.native.sharedlibrary-arm\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\qq234\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.1.6.appx">
+      <Name>Microsoft.NET.Native.Runtime.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\qq234\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.1.6.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\qq234\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.1.6.appx">
+      <Name>Microsoft.NET.Native.Runtime.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\qq234\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.1.6.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\qq234\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.6.appx">
+      <Name>Microsoft.NET.Native.Runtime.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\qq234\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.6.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.24123.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.24123.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.24123.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

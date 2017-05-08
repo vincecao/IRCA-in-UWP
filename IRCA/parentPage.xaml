@@ -24,16 +24,35 @@
                    Style="{StaticResource SubheaderTextBlockStyle}" 
                    Text="Waiting" Margin="10"/>
         </StackPanel>
-        
-        <Grid Grid.Row="2" Grid.Column="0" >
-            <Grid>
-                <Frame Visibility="Visible" 
-                   Name="imageFrame"/>
-                
-                <Grid Visibility="Collapsed" 
+
+        <Grid Name="ImageDrawingGrid" 
+              Grid.Row="2" 
+              Grid.Column="0"
+              AllowDrop="True"
+              Drop="imageDrawingGrid_Drop"
+              DragOver="imageDrawingGrid_DragOver"
+              DragLeave="ImageDrawingGrid_DragLeave">
+
+            <Image Name="imageView" 
+                   VerticalAlignment="Stretch" 
+                   HorizontalAlignment="Stretch"/>
+
+            <Grid Visibility="Collapsed" 
                   Name="inkCanvasGrid" 
                   HorizontalAlignment="Stretch" 
                   VerticalAlignment="Stretch"/>
+
+            <Grid Name="DragTipsGrid"
+                  Margin="15"
+                  Opacity="0.6">
+                <Rectangle Name="DragTipsRect" 
+                           Fill="White"/>
+                <TextBlock Name="DragTipsTextBlock" 
+                           Text="Please import or drag the image." 
+                           Style="{StaticResource HeaderTextBlockStyle}"
+                           Foreground="Black"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
             </Grid>
         </Grid>
 
@@ -41,52 +60,64 @@
             <TextBlock Name="coordinateLabel" Style="{StaticResource CaptionTextBlockStyle}" Text="x: y:"/>
         </StackPanel>
 
-        <RelativePanel Grid.Row="1" Grid.Column="0">
-            <ScrollViewer Background="{ThemeResource ComboBoxBackgroundUnfocused}" 
-                        RelativePanel.AlignLeftWithPanel="True" 
-                        RelativePanel.LeftOf="btnStackPanel"
-                        HorizontalScrollBarVisibility="Auto"
-                        VerticalScrollBarVisibility="Disabled">
-            <StackPanel Name="inkListPanel" 
-                        Orientation="Horizontal">
+        <Grid Grid.Row="1" Grid.Column="0">
 
-                <Button Name="importBtn" 
-                        Foreground="Black"
-                        Background="White"
-                        Width="75">
-                    <StackPanel>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE114;" />
-                        <TextBlock Text="Import"/>
-                    </StackPanel>
-                    <Button.Flyout>
-                        <Flyout x:Name="importFlyout">
-                            <StackPanel Margin="10">
-                                <TextBlock Text="Please choose one way to import: " Margin="0,0,0,10" HorizontalAlignment="Center"/>
-                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                    <Button Name="cameraBtn" 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <Button Name="importBtn" 
+                    Foreground="Black"
+                    Background="White"
+                    Width="75"
+                    Grid.Row="0"
+                    Grid.Column="0">
+                <StackPanel>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE114;" />
+                    <TextBlock Text="Import"/>
+                </StackPanel>
+                <Button.Flyout>
+                    <Flyout x:Name="importFlyout">
+                        <StackPanel Margin="10">
+                            <TextBlock Text="Please choose one way to import: " Margin="0,0,0,10" HorizontalAlignment="Center"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Button Name="cameraBtn" 
                                     Click="cameraBtn_Click" 
                                     Margin="0,0,30,0">
-                                        <StackPanel Orientation="Horizontal">
-                                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE722;" VerticalAlignment="Center"/>
-                                            <TextBlock Text="Camera" VerticalAlignment="Center" Margin="5"/>
-                                        </StackPanel>
-                                    </Button>
-                                    <Button Name="galleryBtn" 
+                                    <StackPanel Orientation="Horizontal">
+                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE722;" VerticalAlignment="Center"/>
+                                        <TextBlock Text="Camera" VerticalAlignment="Center" Margin="5"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button Name="galleryBtn" 
                                      
                                     Click="galleryBtn_Click"
                                     Margin="30,0,0,0">
-                                        <StackPanel Orientation="Horizontal">
-                                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE786;" VerticalAlignment="Center" />
-                                            <TextBlock Text="Gallery" VerticalAlignment="Center" Margin="5"/>
-                                        </StackPanel>
-                                    </Button>
-                                </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE786;" VerticalAlignment="Center" />
+                                        <TextBlock Text="Gallery" VerticalAlignment="Center" Margin="5"/>
+                                    </StackPanel>
+                                </Button>
                             </StackPanel>
-                        </Flyout>
-                    </Button.Flyout>
-                </Button>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
 
-                <Button Name="addObjectBtn" 
+            <ScrollViewer Name="TagScrollViewer" Background="{ThemeResource ComboBoxBackgroundUnfocused}" 
+                          HorizontalScrollBarVisibility="Auto"
+                          VerticalScrollBarVisibility="Disabled"
+                          Grid.Row="0"
+                          Grid.Column="1">
+                <StackPanel Name="inkListPanel" 
+                        Orientation="Horizontal">
+                    <Button Name="addObjectBtn" 
                         Foreground="White" 
                         VerticalAlignment="Stretch" 
                         HorizontalAlignment="Stretch"
@@ -124,16 +155,16 @@
 
             <StackPanel Name="btnStackPanel" 
                         Orientation="Horizontal" 
-                        RelativePanel.AlignRightWithPanel="True"
-                        RelativePanel.AlignBottomWithPanel="True"
-                        RelativePanel.AlignTopWithPanel="True">
+                        Grid.Row="0"
+                        Grid.Column="2">
+                
                 <Button Name="deleteBtn" 
-                    HorizontalAlignment="Stretch"                     
-                    VerticalAlignment="Stretch" 
-                    Background="Red"
-                    Foreground="White"
-                    Click="deleteBtn_Click"
-                    Width="75">
+                        HorizontalAlignment="Stretch"                     
+                        VerticalAlignment="Stretch" 
+                        Background="Red"
+                        Foreground="White"
+                        Click="deleteBtn_Click"
+                        Width="75">
                     <StackPanel>
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEF17;" />
                         <TextBlock Text="Clear"/>
@@ -155,7 +186,7 @@
                 </Button>
 
             </StackPanel>
-        </RelativePanel>
+        </Grid>
         <StackPanel Grid.Column="1" Grid.RowSpan="3" 
                     Background="{StaticResource SystemControlBackgroundAccentBrush}" Visibility="Collapsed">
 

@@ -42,7 +42,7 @@ namespace IRCA
             }
             else if (ParentListBoxItem.IsSelected)
             {
-                passwdDialogAsync("Please enter the password: ", Windows.Storage.ApplicationData.Current.LocalSettings.Values["MyPassSetting"]?.ToString());
+                PasswdDialogAsync("Please enter the password: ", Windows.Storage.ApplicationData.Current.LocalSettings.Values["MyPassSetting"]?.ToString());
             }
             else if (ShareListBoxItem.IsSelected)
             {
@@ -56,7 +56,7 @@ namespace IRCA
             }
         }
 
-        private async void passwdDialogAsync(string title, string passWord)
+        private async void PasswdDialogAsync(string title, string passWord)
         {
             TextBox inputTextBox = new TextBox()
             {

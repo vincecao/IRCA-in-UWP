@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>DCB1CD3F4118AE09066F187DCA56E576D5308CFD4811451ECB47900438A06E83</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>6041FAF6F63298CBC573110D7D38505193C3587D1A168148473BBA816FFFA511</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>bde92871-e2bd-46d0-9726-64a50d54fc8d_1.0.0.0_x64__jnbk6k6zrnp4j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>bde92871-e2bd-46d0-9726-64a50d54fc8d_jnbk6k6zrnp4j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>bde92871-e2bd-46d0-9726-64a50d54fc8d</RegisteredPackageID>
@@ -31,13 +31,17 @@
     <AppXManifest Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-01T06:11:01.208</Modified>
+      <Modified>2017-05-08T15:06:48.277</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Debug\IRCA.exe">
       <PackagePath>entrypoint\IRCA.exe</PackagePath>
-      <Modified>2017-05-01T06:11:00.325</Modified>
+      <Modified>2017-05-08T15:06:47.221</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\15.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.TestExecutor.Core.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.TestExecutor.Core.dll</PackagePath>
+      <Modified>2017-02-08T12:01:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -91,21 +95,21 @@
       <PackagePath>System.dll</PackagePath>
       <Modified>2016-07-01T10:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
-      <Modified>2017-02-09T09:01:36.000</Modified>
+      <Modified>2017-04-04T08:54:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
-      <Modified>2017-02-09T09:01:50.000</Modified>
+      <Modified>2017-04-04T08:54:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Animations\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Animations.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Animations\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Animations.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Animations.dll</PackagePath>
-      <Modified>2017-02-09T09:01:54.000</Modified>
+      <Modified>2017-04-04T08:54:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.dll</PackagePath>
-      <Modified>2017-02-09T09:01:56.000</Modified>
+      <Modified>2017-04-04T08:54:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.VisualBasic\10.0.1\lib\netcore50\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
@@ -119,9 +123,9 @@
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
       <Modified>2016-02-22T05:59:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Newtonsoft.Json\10.0.1\lib\netstandard1.3\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Newtonsoft.Json\10.0.2\lib\netstandard1.3\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2017-03-20T12:03:18.000</Modified>
+      <Modified>2017-04-02T09:46:32.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Robmikh.CompositionSurfaceFactory\0.7.1\runtimes\win10-x64\native\Robmikh.CompositionSurfaceFactory.dll">
       <PackagePath>Robmikh.CompositionSurfaceFactory.dll</PackagePath>
@@ -199,6 +203,10 @@
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
       <Modified>2016-11-04T20:55:32.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\runtime.win.System.Console\4.3.0\runtimes\win\lib\netcore50\System.Console.dll">
+      <PackagePath>System.Console.dll</PackagePath>
+      <Modified>2016-11-04T20:55:46.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\runtime.win.System.Diagnostics.Debug\4.3.0\runtimes\win\lib\netcore50\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
       <Modified>2016-11-04T20:55:48.000</Modified>
@@ -231,17 +239,17 @@
       <PackagePath>System.Private.Uri.dll</PackagePath>
       <Modified>2016-11-04T20:56:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.AppContext\4.1.0\lib\netcore50\System.AppContext.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.AppContext\4.3.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
-      <Modified>2016-06-11T15:13:20.000</Modified>
+      <Modified>2016-11-04T20:55:34.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Buffers\4.3.0\lib\netstandard1.1\System.Buffers.dll">
       <PackagePath>System.Buffers.dll</PackagePath>
       <Modified>2016-11-04T20:55:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Collections.Concurrent\4.0.12\lib\netcore50\System.Collections.Concurrent.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Collections.Concurrent\4.3.0\lib\netcore50\System.Collections.Concurrent.dll">
       <PackagePath>System.Collections.Concurrent.dll</PackagePath>
-      <Modified>2016-06-11T15:13:16.000</Modified>
+      <Modified>2016-11-04T20:55:32.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Collections.Immutable\1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll">
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
@@ -283,9 +291,9 @@
       <PackagePath>System.Diagnostics.Contracts.dll</PackagePath>
       <Modified>2016-11-04T20:55:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Diagnostics.DiagnosticSource\4.0.0\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Diagnostics.DiagnosticSource\4.3.0\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
       <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
-      <Modified>2016-06-11T15:13:28.000</Modified>
+      <Modified>2016-11-04T20:55:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Diagnostics.StackTrace\4.0.2\lib\netstandard1.3\System.Diagnostics.StackTrace.dll">
       <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
@@ -299,13 +307,13 @@
       <PackagePath>System.Globalization.Extensions.dll</PackagePath>
       <Modified>2016-06-11T15:13:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.IO.Compression\4.1.1\runtimes\win\lib\netstandard1.3\System.IO.Compression.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.IO.Compression\4.3.0\runtimes\win\lib\netstandard1.3\System.IO.Compression.dll">
       <PackagePath>System.IO.Compression.dll</PackagePath>
-      <Modified>2016-07-01T07:48:16.000</Modified>
+      <Modified>2016-11-04T20:56:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.IO.Compression.ZipFile\4.0.1\lib\netstandard1.3\System.IO.Compression.ZipFile.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.IO.Compression.ZipFile\4.3.0\lib\netstandard1.3\System.IO.Compression.ZipFile.dll">
       <PackagePath>System.IO.Compression.ZipFile.dll</PackagePath>
-      <Modified>2016-06-11T15:13:42.000</Modified>
+      <Modified>2016-11-04T20:56:04.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.IO.FileSystem.Primitives\4.3.0\lib\netstandard1.3\System.IO.FileSystem.Primitives.dll">
       <PackagePath>System.IO.FileSystem.Primitives.dll</PackagePath>
@@ -335,17 +343,17 @@
       <PackagePath>System.Linq.Queryable.dll</PackagePath>
       <Modified>2016-06-11T15:13:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Net.Http\4.1.0\runtimes\win\lib\netcore50\System.Net.Http.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Net.Http\4.3.0\runtimes\win\lib\netcore50\System.Net.Http.dll">
       <PackagePath>System.Net.Http.dll</PackagePath>
-      <Modified>2016-06-11T15:13:58.000</Modified>
+      <Modified>2016-11-04T20:56:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Net.Http.Rtc\4.0.1\runtimes\win\lib\netcore50\System.Net.Http.Rtc.dll">
       <PackagePath>System.Net.Http.Rtc.dll</PackagePath>
       <Modified>2016-06-11T15:13:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Net.NameResolution\4.0.0\runtimes\win\lib\netcore50\System.Net.NameResolution.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Net.NameResolution\4.3.0\runtimes\win\lib\netcore50\System.Net.NameResolution.dll">
       <PackagePath>System.Net.NameResolution.dll</PackagePath>
-      <Modified>2016-06-11T15:13:58.000</Modified>
+      <Modified>2016-11-04T20:56:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Net.NetworkInformation\4.1.0\runtimes\win\lib\netcore50\System.Net.NetworkInformation.dll">
       <PackagePath>System.Net.NetworkInformation.dll</PackagePath>
@@ -415,6 +423,10 @@
       <PackagePath>System.Reflection.TypeExtensions.dll</PackagePath>
       <Modified>2016-11-04T20:56:48.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Runtime.InteropServices.RuntimeInformation\4.3.0\runtimes\win\lib\netcore50\System.Runtime.InteropServices.RuntimeInformation.dll">
+      <PackagePath>System.Runtime.InteropServices.RuntimeInformation.dll</PackagePath>
+      <Modified>2016-11-04T20:57:00.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Runtime.InteropServices.WindowsRuntime\4.0.1\lib\netcore50\System.Runtime.InteropServices.WindowsRuntime.dll">
       <PackagePath>System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
       <Modified>2016-06-11T15:14:26.000</Modified>
@@ -451,25 +463,25 @@
       <PackagePath>System.Security.Claims.dll</PackagePath>
       <Modified>2016-06-11T15:14:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Cryptography.Algorithms\4.2.0\runtimes\win\lib\netcore50\System.Security.Cryptography.Algorithms.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Cryptography.Algorithms\4.3.0\runtimes\win\lib\netcore50\System.Security.Cryptography.Algorithms.dll">
       <PackagePath>System.Security.Cryptography.Algorithms.dll</PackagePath>
-      <Modified>2016-06-11T15:14:42.000</Modified>
+      <Modified>2016-11-04T20:57:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Cryptography.Cng\4.2.0\runtimes\win\lib\netstandard1.4\System.Security.Cryptography.Cng.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Cryptography.Cng\4.3.0\runtimes\win\lib\netstandard1.4\System.Security.Cryptography.Cng.dll">
       <PackagePath>System.Security.Cryptography.Cng.dll</PackagePath>
-      <Modified>2016-06-11T15:14:42.000</Modified>
+      <Modified>2016-11-04T20:57:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Cryptography.Encoding\4.0.0\runtimes\win\lib\netstandard1.3\System.Security.Cryptography.Encoding.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Cryptography.Encoding\4.3.0\runtimes\win\lib\netstandard1.3\System.Security.Cryptography.Encoding.dll">
       <PackagePath>System.Security.Cryptography.Encoding.dll</PackagePath>
-      <Modified>2016-06-11T15:14:38.000</Modified>
+      <Modified>2016-11-04T20:57:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Cryptography.Primitives\4.0.0\lib\netstandard1.3\System.Security.Cryptography.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Cryptography.Primitives\4.3.0\lib\netstandard1.3\System.Security.Cryptography.Primitives.dll">
       <PackagePath>System.Security.Cryptography.Primitives.dll</PackagePath>
-      <Modified>2016-06-11T15:14:42.000</Modified>
+      <Modified>2016-11-04T20:57:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Cryptography.X509Certificates\4.1.0\runtimes\win\lib\netcore50\System.Security.Cryptography.X509Certificates.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Cryptography.X509Certificates\4.3.0\runtimes\win\lib\netcore50\System.Security.Cryptography.X509Certificates.dll">
       <PackagePath>System.Security.Cryptography.X509Certificates.dll</PackagePath>
-      <Modified>2016-06-11T15:14:48.000</Modified>
+      <Modified>2016-11-04T20:57:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\System.Security.Principal\4.0.1\lib\netcore50\System.Security.Principal.dll">
       <PackagePath>System.Security.Principal.dll</PackagePath>
@@ -551,264 +563,49 @@
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2016-08-09T00:14:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\BadgeLogo.scale-100.png">
-      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\15.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.Common.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.Common.dll</PackagePath>
+      <Modified>2017-02-08T12:01:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\BadgeLogo.scale-125.png">
-      <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\15.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.Core.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.Core.dll</PackagePath>
+      <Modified>2017-02-08T12:01:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\BadgeLogo.scale-150.png">
-      <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\15.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll">
+      <PackagePath>Microsoft.VisualStudio.TestPlatform.ObjectModel.dll</PackagePath>
+      <Modified>2017-02-08T12:01:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\BadgeLogo.scale-200.png">
-      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\15.0\Redist\CommonConfiguration\x64\vstest.executionengine.WindowsPhone.dll">
+      <PackagePath>vstest.executionengine.WindowsPhone.dll</PackagePath>
+      <Modified>2017-02-08T12:01:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\BadgeLogo.scale-400.png">
-      <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\15.0\Redist\CommonConfiguration\x64\vstest_executionengine_platformbridge.dll">
+      <PackagePath>vstest_executionengine_platformbridge.dll</PackagePath>
+      <Modified>2017-02-08T12:01:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\LargeTile.scale-100.png">
-      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\LargeTile.scale-125.png">
-      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\LargeTile.scale-150.png">
-      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\LargeTile.scale-200.png">
-      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\LargeTile.scale-400.png">
-      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\SmallTile.scale-100.png">
-      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:49:24.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\SmallTile.scale-125.png">
-      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\SmallTile.scale-150.png">
-      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\SmallTile.scale-200.png">
-      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:49:24.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\SmallTile.scale-400.png">
-      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:49:24.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\SplashScreen.scale-100.png">
-      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\SplashScreen.scale-125.png">
-      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\SplashScreen.scale-150.png">
-      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\SplashScreen.scale-400.png">
-      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square150x150Logo.scale-100.png">
-      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square150x150Logo.scale-125.png">
-      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square150x150Logo.scale-150.png">
-      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square150x150Logo.scale-400.png">
-      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
-      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.scale-100.png">
-      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.scale-125.png">
-      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.scale-150.png">
-      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.scale-400.png">
-      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.targetsize-16.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.targetsize-24.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.targetsize-256.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.targetsize-32.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.targetsize-48.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\StoreLogo.scale-100.png">
-      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:46:00.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\StoreLogo.scale-125.png">
-      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\StoreLogo.scale-150.png">
-      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\StoreLogo.scale-200.png">
-      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\StoreLogo.scale-400.png">
-      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Wide310x150Logo.scale-100.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Wide310x150Logo.scale-125.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Wide310x150Logo.scale-150.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Wide310x150Logo.scale-400.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-04-05T14:48:10.000</Modified>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\TestPlatform.Universal\15.0\Redist\CommonConfiguration\neutral\vstest_executionengine_platformbridge.winmd">
+      <PackagePath>vstest_executionengine_platformbridge.winmd</PackagePath>
+      <Modified>2017-02-08T12:01:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
+      <Modified>2017-03-21T13:02:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
+      <Modified>2017-03-21T13:02:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:46:00.000</Modified>
+      <Modified>2017-03-21T13:02:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T14:48:10.000</Modified>
+      <Modified>2017-03-21T13:02:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -816,96 +613,100 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Debug\IRCA.xr.xml">
       <PackagePath>IRCA.xr.xml</PackagePath>
-      <Modified>2017-03-29T17:22:52.000</Modified>
+      <Modified>2017-05-08T15:06:46.771</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2017-04-28T03:01:33.564</Modified>
+      <Modified>2017-05-06T13:57:56.417</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml</PackagePath>
+      <Modified>2017-04-04T08:54:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.3.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\1.4.1\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml</PackagePath>
-      <Modified>2017-02-09T09:01:30.000</Modified>
+      <Modified>2017-04-04T08:54:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-01T05:39:11.385</Modified>
+      <Modified>2017-05-08T15:06:47.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Debug\Core\IRCA.exe">
       <PackagePath>IRCA.exe</PackagePath>
-      <Modified>2017-05-01T06:11:01.193</Modified>
+      <Modified>2017-05-08T15:06:48.266</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

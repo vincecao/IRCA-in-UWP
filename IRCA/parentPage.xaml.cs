@@ -3,9 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Devices.Input;
 using Windows.Foundation;
+using Windows.Graphics.Imaging;
+using Windows.Media.Capture;
 using Windows.Storage;
+using Windows.Storage.Pickers;
 using Windows.UI;
 using Windows.UI.Input;
 using Windows.UI.Input.Inking;
@@ -13,6 +18,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Shapes;
 
@@ -27,6 +33,7 @@ namespace IRCA
         private List<myCanvas> mycanvasList = new List<myCanvas>();
         private List<Items> itemsList = new List<Items>();
         private String[] objectArr = new String[10];
+        private static WriteableBitmap image;
 
         private InkManager _inkKhaled = new Windows.UI.Input.Inking.InkManager();
         private int num;
@@ -41,6 +48,10 @@ namespace IRCA
 
         private Color _col = Color.FromArgb(0,0,0,0);
         private int objectMax = 15;
+
+        private int _actualWidth;
+        private int _actualHeight;
+
         //private int imageId  = 0;
 
         private int _id; //for get current canvas index by tapping tags
@@ -51,13 +62,13 @@ namespace IRCA
         public parentPage()
         {
             this.InitializeComponent();
-            initObjectPosition();
+            initObjectPosition(objectData);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            imageFrame.Navigate(typeof(imageGuidePage));
+            //imageFrame.Navigate(typeof(imageGuidePage));
             num = 0;
 
             if (ApplicationData.Current.LocalSettings.Values["ImageNumber"] == null)
@@ -68,15 +79,17 @@ namespace IRCA
         private void cameraBtn_Click(object sender, RoutedEventArgs e)
         {
             doClear();
-            imageFrame.Navigate(typeof(cameraCapture));
+            doCameraPickImage();
             inkCanvasGrid.Visibility = Visibility.Visible;
+            DragTipsGrid.Visibility = Visibility.Collapsed;
         }
 
         private void galleryBtn_Click(object sender, RoutedEventArgs e)
         {
             doClear();
-            imageFrame.Navigate(typeof(galleryImport));
+            doGalleryPickImage();
             inkCanvasGrid.Visibility = Visibility.Visible;
+            DragTipsGrid.Visibility = Visibility.Collapsed;
         }
 
         private void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
@@ -86,9 +99,9 @@ namespace IRCA
             autoSuggestBox.ItemsSource = filtered;
         }
 
-        private async void AutoSuggestBox_QuerySubmittedAsync(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        private async void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
-            if (nameTextBox.Text != "")
+            if (nameTextBox.Text != "" && imageView.Source != null)
             {
                 num++;
 
@@ -113,7 +126,7 @@ namespace IRCA
         }
 
         //record        
-        private void Record_ClickAsync(object sender, RoutedEventArgs e)
+        private void Record_Click(object sender, RoutedEventArgs e)
         {
             if (recordPan.Recording)
             {
@@ -152,7 +165,14 @@ namespace IRCA
                 myCanvas canvas  = new myCanvas(num - 1,tagbtn._color);
                 mycanvasList.Add(canvas);
                 //canvas.Height = imageFrame.Height;
-                canvas.Width = imageFrame.ActualWidth;
+
+                //form the same size of the image. in case: canvas can not change size
+                _actualWidth = (int)imageView.ActualWidth;
+                _actualHeight = (int)imageView.ActualHeight;
+
+                canvas.Width = imageView.ActualWidth;
+                canvas.Height = imageView.ActualHeight;
+
                 inkCanvasGrid.Children.Add(canvas);
 
                 Tag_Click(tagList[num - 1], new RoutedEventArgs());
@@ -190,11 +210,13 @@ namespace IRCA
                 x2 = currentContactPt.X;
                 y2 = currentContactPt.Y;
 
-                coordinateLabel.Text = "x:" + (int)(x2 / App._accu) + ", y:" + (int)(y2 / App._accu);
+                coordinateLabel.Text = "x:" + (int)(((int)x2 / App._accu) / _actualWidth) + ", y:" + (int)(((int)y2 / App._accu) / _actualHeight);
+                //coordinateLabel.Text = "x:" + (int)(x2 / _actualWidth * App._accu) + ", y:" + (int)(y2 / _actualHeight * App._accu);
 
-                objectData[(int)(x2 / App._accu), (int)(y2 / App._accu)] = stepTextBlock.Text;
+                objectData[(int)(((int)x2 / App._accu) / _actualWidth), (int)(((int)y2 / App._accu) / _actualHeight)] = stepTextBlock.Text;
+                //objectData[(int)(x2 / _actualWidth * App._accu), (int)(y2 / _actualHeight * App._accu)] = stepTextBlock.Text;
 
-                if (Distance(x1, y1, x2, y2) > 2.0) // We need to developp this method now 
+                if (Distance(x1, y1, x2, y2) > 2.0) 
                 {
                     Line line = new Line()
                     {
@@ -237,11 +259,9 @@ namespace IRCA
             return mycanvasList[_id];
         }
 
-        private double Distance(double x1, double y1, double x2, double y2)
-        {
-            double d = 0;
-            d = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-            return d;
+        public double Distance(double x1, double y1, double x2, double y2)
+        {         
+            return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
         }
 
         #endregion
@@ -282,21 +302,20 @@ namespace IRCA
 
         private void saveBtn_Click(object sender, RoutedEventArgs e)
         {
-            doCreateItems();           
+            var imageId = (int)ApplicationData.Current.LocalSettings.Values["ImageNumber"];
+            doCreateItems(image, imageId, objectArr, objectData);           
         }
 
-        private void doCreateItems()
+        private void doCreateItems(WriteableBitmap image, int imageId, String[] objectArr, string[,] objectData)
         {
             try
             {
-                var imageId = (int)ApplicationData.Current.LocalSettings.Values["ImageNumber"];
-
                 App.imageArr.Add(imageId + "_Picture");
 
                 Items items = new Items(imageId, objectArr, objectData);
                 itemsList.Add(items);
 
-                doSave(items, imageId);
+                doSave(image, items, imageId);
                 doClear();
 
                 ApplicationData.Current.LocalSettings.Values["ImageNumber"] = imageId + 1;
@@ -307,17 +326,17 @@ namespace IRCA
             }
         }
 
-        private async void doSave(Items items, int imageId)
+        private async void doSave(WriteableBitmap image, Items items, int imageId)
         {
             //save as json
             string json = JsonConvert.SerializeObject(items);
             await items.SaveJsonToFileAsync(imageId, json);
 
             //output image file
-            await items.SaveBitmapToFileAsync(App.image, imageId + "_Picture");
+            await items.SaveBitmapToFileAsync(image, imageId + "_Picture");
 
             //output as txt file
-            //await items.SaveTxtDataToFileAsync(imageId + "", objectData); 
+            //await items.SaveTxtDataToFileAsync(imageId + "_Position", objectData); 
         }
 
         private void doClear()
@@ -327,8 +346,17 @@ namespace IRCA
             mycanvasList.Clear();
             coordinateLabel.Text = "";
             stepTextBlock.Text = "Waiting";
-            imageFrame.Navigate(typeof(imageGuidePage));
-            int inkNum = (int)inkListPanel.Children.LongCount() - 2;
+
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush();
+            mySolidColorBrush.Color = Colors.White;
+            DragTipsRect.Fill = mySolidColorBrush;
+            
+            DragTipsTextBlock.Text = "Please import or drag the image.";
+            DragTipsGrid.Visibility = Visibility.Visible;
+
+            imageView.Source = null;
+
+            int inkNum = (int)inkListPanel.Children.LongCount() - 1;
 
             for (int i = 0; i < inkNum * 2; i++)
             {
@@ -341,10 +369,10 @@ namespace IRCA
             }
             addObjectBtn.Visibility = Visibility.Visible;
 
-            initObjectPosition();
+            initObjectPosition(objectData);
         }
 
-        private void initObjectPosition()
+        private void initObjectPosition(string[,] objectData)
         {
             for (int i = 0; i < objectData.GetLength(0); i++)
             {
@@ -355,6 +383,112 @@ namespace IRCA
             }
         }
 
-        
+        private async void imageDrawingGrid_Drop(object sender, DragEventArgs e)
+        {
+            if (e.DataView.Contains(StandardDataFormats.StorageItems))
+            {
+                var items = await e.DataView.GetStorageItemsAsync();
+
+                if (items.Any())
+                {
+                    var storageFile = items[0] as StorageFile;
+                    var contentType = storageFile.ContentType;
+
+                    StorageFolder folder =
+                await ApplicationData.Current.LocalFolder.CreateFolderAsync("Cache", CreationCollisionOption.OpenIfExists);                    
+
+                    if (contentType == "image/png" || contentType == "image/jpeg")
+                    {
+                        doClear();
+
+                        StorageFile newFile = await storageFile.CopyAsync(folder, storageFile.Name, NameCollisionOption.GenerateUniqueName);
+
+                        await ProcessFile(newFile);
+                        inkCanvasGrid.Visibility = Visibility.Visible;
+                        DragTipsGrid.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        SolidColorBrush mySolidColorBrush = new SolidColorBrush();
+                        mySolidColorBrush.Color = Colors.White;
+                        DragTipsRect.Fill = mySolidColorBrush;
+                        DragTipsTextBlock.Text = "The file is not in JPG or PNG image format.";
+                    }
+                }
+            }
+        }
+
+        private void imageDrawingGrid_DragOver(object sender, DragEventArgs e)
+        {
+            e.AcceptedOperation = DataPackageOperation.Copy;
+            //e.DragUIOverride.Caption = "drop to create a custom sound and tile";
+            //e.DragUIOverride.IsCaptionVisible = true;
+            //e.DragUIOverride.IsContentVisible = true;
+            //e.DragUIOverride.IsGlyphVisible = true;
+            //e.DragUIOverride.SetContentFromBitmapImage(new BitmapImage(new Uri("ms-appx:///Assets/clippy.jpg")));
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush();
+            mySolidColorBrush.Color = Colors.Red;
+            DragTipsRect.Fill = mySolidColorBrush;
+            DragTipsTextBlock.Text = "Drag and loose here!";
+        }
+
+        private void ImageDrawingGrid_DragLeave(object sender, DragEventArgs e)
+        {
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush();
+            mySolidColorBrush.Color = Colors.White;
+            DragTipsRect.Fill = mySolidColorBrush;
+            DragTipsTextBlock.Text = "Please import or drag the image.";
+        }
+
+        private async void doCameraPickImage()
+        {
+            var ccu = new CameraCaptureUI();
+            var file = await ccu.CaptureFileAsync(CameraCaptureUIMode.Photo);
+
+            if (file != null)
+            {
+                await ProcessFile(file);
+            }
+            else
+            {
+
+            }
+
+        }
+
+        private async void doGalleryPickImage()
+        {
+            var openPicker = new FileOpenPicker
+            {
+                ViewMode = PickerViewMode.Thumbnail,
+                SuggestedStartLocation = PickerLocationId.PicturesLibrary
+            };
+            openPicker.FileTypeFilter.Add(".jpg");
+            var file = await openPicker.PickSingleFileAsync();
+
+            if (file != null)
+            {
+                await ProcessFile(file);
+            }
+        }
+
+        private async Task ProcessFile(StorageFile file)
+        {
+            if (file != null)
+            {
+                var stream = await file.OpenAsync(FileAccessMode.Read);
+                //using writeableBitmap
+                BitmapDecoder decoder = await BitmapDecoder.CreateAsync(stream);
+                image = new WriteableBitmap((int)decoder.PixelWidth, (int)decoder.PixelHeight);
+                //using bitmap
+                //var image = new BitmapImage();
+                image.SetSource(stream);
+                imageView.Source = image;
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

@@ -12,13 +12,10 @@ namespace IRCA
 
     sealed partial class App : Application
     {
-
-        internal static string passWord;
-        internal static WriteableBitmap image;
         internal static List<string> imageArr = new List<string>();
         internal static string imageSource = null; //for convert image_source from children page to fullscreen page
         internal static int _id; //for convert image_id from children page to fullscreen page
-        internal static int _accu = 25; //for optimize the touch performance.
+        internal static double _accu = 0.01; //for optimize the touch performance.
         //internal static IRandomAccessStream stream;
 
         public App()
