@@ -10,7 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Rectangle Fill="gray"/>
         <StackPanel>
-            <TextBlock Text="Please copy the path and open in folder. Move the entire Save Folder. All the files in this device is well design to share with others."
+            <TextBlock Name="InstructionTextBlock"
                        Foreground="White"
                        Style="{StaticResource HeaderTextBlockStyle}"
                        Margin="35"
@@ -23,7 +23,7 @@
 
                 <Button Foreground="White"
                         Background="Red"
-                        Content="Copy"
+                      Name="CopyBtn"
                         Margin="15"
                         VerticalAlignment="Center"
                         Tapped="Button_Tapped"/>

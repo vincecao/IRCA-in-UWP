@@ -25,7 +25,6 @@
                     Click="HamburgerButton_Click" 
                     Background="{ThemeResource SystemControlBackgroundAccentBrush}"/>
             <TextBlock Name="headerTitle" 
-                       Text="Child" 
                        FontSize="28" 
                        RelativePanel.RightOf="HamburgerButton" 
                        Margin="10" 
@@ -54,7 +53,7 @@
                                        FontSize="25" 
                                        VerticalAlignment="Center" 
                                        HorizontalAlignment="Center"/>
-                            <TextBlock Text="Child" 
+                            <TextBlock Name="ChildListBoxTextBlock" 
                                        FontSize="22" 
                                        Margin="15,0,0,0" 
                                        VerticalAlignment="Center" 
@@ -69,7 +68,7 @@
                                        FontSize="25" 
                                        VerticalAlignment="Center" 
                                        HorizontalAlignment="Center"/>
-                            <TextBlock Text="Parent" 
+                            <TextBlock Name="ParentListBoxTextBlock" 
                                        FontSize="22" 
                                        Margin="15,0,0,0" 
                                        VerticalAlignment="Center" 
@@ -84,7 +83,7 @@
                                        FontSize="25" 
                                        VerticalAlignment="Center" 
                                        HorizontalAlignment="Center"/>
-                            <TextBlock Text="Share" 
+                            <TextBlock Name="ShareListBoxTextBlock" 
                                        FontSize="22" 
                                        Margin="15,0,0,0" 
                                        VerticalAlignment="Center" 
@@ -99,7 +98,7 @@
                                        FontSize="25" 
                                        VerticalAlignment="Center" 
                                        HorizontalAlignment="Center"/>
-                            <TextBlock Text="Setting" 
+                            <TextBlock Name="SettingListBoxTextBlock" 
                                        FontSize="22" 
                                        Margin="15,0,0,0" 
                                        VerticalAlignment="Center" 

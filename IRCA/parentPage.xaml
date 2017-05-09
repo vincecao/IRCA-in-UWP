@@ -22,7 +22,7 @@
         <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" Visibility="Collapsed">
             <TextBlock  Name="stepTextBlock" 
                    Style="{StaticResource SubheaderTextBlockStyle}" 
-                   Text="Waiting" Margin="10"/>
+                   Margin="10"/>
         </StackPanel>
 
         <Grid Name="ImageDrawingGrid" 
@@ -48,7 +48,6 @@
                 <Rectangle Name="DragTipsRect" 
                            Fill="White"/>
                 <TextBlock Name="DragTipsTextBlock" 
-                           Text="Please import or drag the image." 
                            Style="{StaticResource HeaderTextBlockStyle}"
                            Foreground="Black"
                            VerticalAlignment="Center"
@@ -80,19 +79,20 @@
                     Grid.Column="0">
                 <StackPanel>
                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE114;" />
-                    <TextBlock Text="Import"/>
+                    <TextBlock Name="ImportLabelTextBlock"/>
                 </StackPanel>
                 <Button.Flyout>
                     <Flyout x:Name="importFlyout">
                         <StackPanel Margin="10">
-                            <TextBlock Text="Please choose one way to import: " Margin="0,0,0,10" HorizontalAlignment="Center"/>
+                            <TextBlock Name="ImportTipsTextBlock" 
+                                       Margin="0,0,0,10" HorizontalAlignment="Center"/>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                 <Button Name="cameraBtn" 
                                     Click="cameraBtn_Click" 
                                     Margin="0,0,30,0">
                                     <StackPanel Orientation="Horizontal">
                                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE722;" VerticalAlignment="Center"/>
-                                        <TextBlock Text="Camera" VerticalAlignment="Center" Margin="5"/>
+                                        <TextBlock Name="CameraLabelTextBlock" VerticalAlignment="Center" Margin="5"/>
                                     </StackPanel>
                                 </Button>
                                 <Button Name="galleryBtn" 
@@ -101,7 +101,7 @@
                                     Margin="30,0,0,0">
                                     <StackPanel Orientation="Horizontal">
                                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE786;" VerticalAlignment="Center" />
-                                        <TextBlock Text="Gallery" VerticalAlignment="Center" Margin="5"/>
+                                        <TextBlock Name="GalleryLabelTextBlock" VerticalAlignment="Center" Margin="5"/>
                                     </StackPanel>
                                 </Button>
                             </StackPanel>
@@ -125,7 +125,7 @@
                         Background="{StaticResource SystemControlBackgroundAccentBrush}">
                     <StackPanel>
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE81E;" />
-                        <TextBlock Text="Add"/>
+                        <TextBlock Name="AddLabelTextBlock"/>
                     </StackPanel>
                     <Button.Flyout>
                         <Flyout x:Name="nameFlyout">
@@ -133,14 +133,15 @@
                                 <AppBarButton Name="Record" Visibility="Collapsed" Icon="Microphone" Label="Record" Click="Record_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                                 <StackPanel x:Name="suggestionBox_stackPanel" Visibility="Visible" HorizontalAlignment="Center">
-                                    <TextBlock Text="Please enter the objects name" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+                                    <TextBlock Name="EnterObjectsTipsTextBlock"
+                                               Margin="0,0,0,10" 
+                                               HorizontalAlignment="Center"/>
                                     <AutoSuggestBox Name="nameTextBox" 
                                                     Margin="10"
                                                     Grid.Row="5" 
                                                     Grid.Column="1" 
                                                     HorizontalAlignment="Left" 
                                                     QueryIcon="Add"
-                                                    PlaceholderText="Name Objects" 
                                                     Width="200" 
                                                     TextChanged="AutoSuggestBox_TextChanged"
                                                     QuerySubmitted="AutoSuggestBox_QuerySubmitted"/>
@@ -167,7 +168,7 @@
                         Width="75">
                     <StackPanel>
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEF17;" />
-                        <TextBlock Text="Clear"/>
+                        <TextBlock Name="ClearLabelTextBlock"/>
                     </StackPanel>
                 </Button>
                 
@@ -181,7 +182,7 @@
                     Width="75">
                     <StackPanel>
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE105;" />
-                        <TextBlock Text="Save"/>
+                        <TextBlock Name="SaveLabelTextBlock"/>
                     </StackPanel>
                 </Button>
 

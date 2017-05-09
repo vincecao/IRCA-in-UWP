@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-de"
+"ResourceDimensions"		"language-de-de"
+
+[Files]
+"C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\obj\ARM\Debug\split.language-de.pri"			"resources.pri"

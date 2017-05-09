@@ -26,13 +26,12 @@
                         Tapped="back_Tapped">
                 <StackPanel Orientation="Horizontal">
                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE112;" />
-                    <TextBlock Text="Back" Margin="5,0,0,0"/>
+                    <TextBlock Name="BackTextBlock" Margin="5,0,0,0"/>
                 </StackPanel>
             </Button>
 
             <TextBlock x:Name="nameTextBlock" 
                        Foreground="white" 
-                       Text="123" 
                        Style="{StaticResource TitleTextBlockStyle}" 
                        HorizontalAlignment="Center"/>
 
@@ -43,7 +42,7 @@
                         Background="{StaticResource SystemControlBackgroundAccentBrush}"
                         Tapped="HideBtn_Tapped">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Hide" Margin="0,0,5,0"/>
+                    <TextBlock Name="HideTextBlock" Margin="0,0,5,0"/>
                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70E;" />
                 </StackPanel>
             </Button>
@@ -76,7 +75,7 @@
                         Background="{StaticResource SystemControlBackgroundAccentBrush}"
                         Tapped="ShowBtn_Tapped">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Show" Margin="0,0,5,0"/>
+                    <TextBlock Name="ShowTextBlock" Margin="0,0,5,0"/>
                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70D;" />
                 </StackPanel>
             </Button>

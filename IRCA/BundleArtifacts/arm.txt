@@ -1,0 +1,7 @@
+MainPackage=C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\ARM\Debug\IRCA_1.0.5.0_ARM_Debug.appx
+SymbolPackage=C:\Users\qq234\Desktop\App\IRCA_1.0.5.0_Debug_Test\IRCA_1.0.5.0_ARM_Debug.appxsym
+ResourcePack=C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\ARM\Debug\IRCA_1.0.5.0_language-zh-hans.appx
+ResourcePack=C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\ARM\Debug\IRCA_1.0.5.0_scale-100.appx
+ResourcePack=C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\ARM\Debug\IRCA_1.0.5.0_scale-125.appx
+ResourcePack=C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\ARM\Debug\IRCA_1.0.5.0_scale-150.appx
+ResourcePack=C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\ARM\Debug\IRCA_1.0.5.0_scale-400.appx

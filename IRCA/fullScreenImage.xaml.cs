@@ -9,7 +9,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml;
-using Windows.UI.Xaml.Shapes;
+using System.Collections.ObjectModel;
 
 namespace IRCA
 {
@@ -24,10 +24,30 @@ namespace IRCA
     {
         private static string JsonFile;
         public readItems read;
+        private ObservableCollection<string> TextList = new ObservableCollection<string>();
 
         public fullScreenImage()
         {
             this.InitializeComponent();
+
+            if (ApplicationData.Current.LocalSettings.Values["ChineseLanguage"] != null && (bool)ApplicationData.Current.LocalSettings.Values["ChineseLanguage"] == true)
+            {
+                TextList.Clear();
+                TextList.Add("后退");
+                TextList.Add("隐藏");
+                TextList.Add("显示");
+            }
+            else
+            {
+                TextList.Clear();
+                TextList.Add("Back");
+                TextList.Add("Hide");
+                TextList.Add("Show");
+            }
+
+            BackTextBlock.Text = TextList[0];
+            HideTextBlock.Text = TextList[1];
+            ShowTextBlock.Text = TextList[2];
         }
 
         protected async override void OnNavigatedTo(NavigationEventArgs e)
@@ -103,14 +123,10 @@ namespace IRCA
             var _actualHeight = (int)FullScreenImage.ActualHeight;
 
             string name = read.objectData[(int)((x / App._accu) / _actualWidth), (int)((y / App._accu) / _actualHeight)];
-            //string name = read.objectData[(int)(x / _actualWidth * App._accu), (int)(y / _actualHeight * App._accu)];
-
 
             if (name == "null")
             {
                 coordinateLabel.Text = (int)((x / App._accu) / _actualWidth) + "," + (int)((y / App._accu) / _actualHeight);
-                //coordinateLabel.Text = (int)(x / _actualWidth * App._accu) + "," + (int)(y / _actualHeight * App._accu);
-
                 nameTextBlock.Text = "";
             }
             else

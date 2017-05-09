@@ -8,16 +8,31 @@
     mc:Ignorable="d">
 
     <StackPanel Margin="50">
-        <TextBlock Text="Reset the password" Style="{StaticResource SubheaderTextBlockStyle}" Margin="30,20,0,0"/>
-        <Button     Margin="30,20,0,0"
-                    HorizontalAlignment="Left"                     
-                    VerticalAlignment="Center" 
-                    Background="Yellow"
-                    Foreground="Black"
-                    Width="auto">
+        <TextBlock Text="简体中文 / Simplified Chinese" 
+                   Style="{StaticResource SubheaderTextBlockStyle}" 
+                   Margin="30,20,0,0"/>
+        <ToggleSwitch x:Name="ChineseToggle"
+                      Header="（下一次重启软件后完全显示 / All Chinese will display in the next startup with the app）"
+                      Margin="30,20,0,0"
+                      HorizontalAlignment="Left"                     
+                      VerticalAlignment="Center" 
+                      Foreground="Black"
+                      Width="auto"
+                      Toggled="ChineseToggle_Toggled"/>
+        
+        <TextBlock Name="ResPassTextBlock" 
+                   Style="{StaticResource SubheaderTextBlockStyle}" 
+                   Margin="30,20,0,0"/>
+        <Button Margin="30,20,0,0"
+                HorizontalAlignment="Left"                     
+                VerticalAlignment="Center" 
+                Background="Yellow"
+                Foreground="Black"
+                Width="auto">
             <StackPanel Orientation="Horizontal">
                 <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEBC4;" />
-                <TextBlock Text="Reset" Margin="10,0,0,0"/>
+                <TextBlock Name="ResetTextBlock" 
+                           Margin="10,0,0,0"/>
             </StackPanel>
             <Button.Flyout>
                 <Flyout x:Name="resetFlyout">
@@ -30,37 +45,42 @@
             </Button.Flyout>
         </Button>
 
-        <TextBlock Text="Clear the cache" Style="{StaticResource SubheaderTextBlockStyle}" Margin="30,50,0,0"/>
+        <TextBlock Name="ClearCacheTextBlock" 
+                   Style="{StaticResource SubheaderTextBlockStyle}" 
+                   Margin="30,50,0,0"/>
         <Button Name="recCacheBtn" 
                 Margin="30,20,0,0"
-                    HorizontalAlignment="Left"                     
-                    VerticalAlignment="Center" 
-                    Background="Green"
-                    Foreground="White"
-                    Width="auto">
+                HorizontalAlignment="Left"                     
+                VerticalAlignment="Center" 
+                Background="Green"
+                Foreground="White"
+                Width="auto">
             <StackPanel Orientation="Horizontal">
                 <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEBC4;" />
-                
-                <TextBlock Text="Reset" Margin="10,0,0,0"/>
+
+                <TextBlock Name="ResetTextBlock2" 
+                           Margin="10,0,0,0"/>
             </StackPanel>
             <Button.Flyout>
                 <Flyout x:Name="resetCacheDataFlyout">
                     <StackPanel Margin="10">
-                        <TextBlock Text="Are you sure to clear all data in the child-mode? " Margin="0,0,0,10" HorizontalAlignment="Center"/>
+                        <TextBlock Name="Warning1TextBlock" 
+                                   Margin="0,0,0,10" 
+                                   HorizontalAlignment="Center"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Button Name="resetCacheDataBtn" 
-                                            Click="resetCacheDataBtn_Click" 
-                                            Margin="0,0,30,0"
-                                            Background="Red"
-                                            Foreground="White">
+                                    Click="resetCacheDataBtn_Click" 
+                                    Margin="0,0,30,0"
+                                    Background="Red"
+                                    Foreground="White">
                                 <StackPanel Orientation="Horizontal">
                                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE0E7;" />
                                     <TextBlock Text="YES" VerticalAlignment="Center" Margin="5"/>
                                 </StackPanel>
                             </Button>
                             <Button Name="cancelResetCacheBtn" 
-                                            Click="cancelResetCacheBtn_Click"
-                                            Margin="30,0,0,0">
+                                    Click="cancelResetCacheBtn_Click"
+                                    Margin="30,0,0,0">
                                 <StackPanel Orientation="Horizontal">
                                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE10A;" />
                                     <TextBlock Text="NO" VerticalAlignment="Center" Margin="5"/>
@@ -73,7 +93,9 @@
         </Button>
 
 
-        <TextBlock Text="Clear the data" Style="{StaticResource SubheaderTextBlockStyle}" Margin="30,50,0,0"/>
+        <TextBlock Name="ClearDataTextBlock" 
+                   Style="{StaticResource SubheaderTextBlockStyle}" 
+                   Margin="30,20,0,0"/>
         <Button Name="recBtn" 
                 Margin="30,20,0,0"
                     HorizontalAlignment="Left"                     
@@ -83,18 +105,20 @@
                     Width="auto">
             <StackPanel Orientation="Horizontal">
                 <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEBC4;" />
-                <TextBlock Text="Reset" Margin="10,0,0,0"/>
+                <TextBlock Name="ResetTextBlock3" Margin="10,0,0,0"/>
             </StackPanel>
             <Button.Flyout>
                 <Flyout x:Name="resetDataFlyout">
                     <StackPanel Margin="10">
-                        <TextBlock Text="Are you sure to clear all data in the child-mode? " Margin="0,0,0,10" HorizontalAlignment="Center"/>
+                        <TextBlock Name="Warning2TextBlock" 
+                                   Margin="0,0,0,10" 
+                                   HorizontalAlignment="Center"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Button Name="resetDataBtn" 
-                                            Click="resetDataBtn_Click" 
-                                            Margin="0,0,30,0"
-                                            Background="Red"
-                                            Foreground="White">
+                                     Click="resetDataBtn_Click" 
+                                     Margin="0,0,30,0"
+                                     Background="Red"
+                                     Foreground="White">
                                 <StackPanel Orientation="Horizontal">
                                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE0E7;" />
                                     <TextBlock Text="YES" VerticalAlignment="Center" Margin="5"/>

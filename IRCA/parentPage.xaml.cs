@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
@@ -27,12 +28,12 @@ namespace IRCA
 
     public sealed partial class parentPage : Page
     {
-        //private Color[] colorArr = new Color[10];
         private string[,] objectData = new string[400,400];
         private List<tagBtn> tagList = new List<tagBtn>();
         private List<myCanvas> mycanvasList = new List<myCanvas>();
         private List<Items> itemsList = new List<Items>();
-        private String[] objectArr = new String[10];
+        private static int objectMax = 15;
+        private String[] objectArr = new String[objectMax];
         private static WriteableBitmap image;
 
         private InkManager _inkKhaled = new Windows.UI.Input.Inking.InkManager();
@@ -47,28 +48,79 @@ namespace IRCA
         private double y2;
 
         private Color _col = Color.FromArgb(0,0,0,0);
-        private int objectMax = 15;
+        
 
         private int _actualWidth;
         private int _actualHeight;
 
-        //private int imageId  = 0;
-
         private int _id; //for get current canvas index by tapping tags
         private recordPan recordPan = new recordPan("defalut");
 
-        suggestionItems suggestions = new suggestionItems();
+        private suggestionItems suggestions = new suggestionItems();
+
+        private ObservableCollection<string> TextList = new ObservableCollection<string>();
 
         public parentPage()
         {
             this.InitializeComponent();
+
+            if (ApplicationData.Current.LocalSettings.Values["ChineseLanguage"] != null 
+                && (bool)ApplicationData.Current.LocalSettings.Values["ChineseLanguage"] == true)
+            {
+                TextList.Clear();
+                TextList.Add("导入");
+                TextList.Add("图层");
+                TextList.Add("清除");
+                TextList.Add("保存");
+                TextList.Add("请先导入或者拖入图像");
+                TextList.Add("请选择一种方式导入图片：");
+                TextList.Add("相机");
+                TextList.Add("相册");
+                TextList.Add("请填写标签名字：");
+                TextList.Add("命名物体为...");
+                TextList.Add("等待中");
+                TextList.Add("请导入 .JPG 或者 .PNG 格式的图片文件");
+                TextList.Add("拖到这里并放下！");
+                TextList.Add("");
+            }
+            else
+            {
+                TextList.Clear();
+                TextList.Add("Import");
+                TextList.Add("Add");
+                TextList.Add("Clear");
+                TextList.Add("Save");
+                TextList.Add("Please import or drag the image.");
+                TextList.Add("Please choose one way to import: ");
+                TextList.Add("Camera");
+                TextList.Add("Gallery");
+                TextList.Add("Please enter the objects name: ");
+                TextList.Add("Name Objects");
+                TextList.Add("Waiting");
+                TextList.Add("The file is not in JPG or PNG image format.");
+                TextList.Add("Drag and loose here!");
+                TextList.Add("");
+            }
+
+            ImportLabelTextBlock.Text = TextList[0];
+            AddLabelTextBlock.Text = TextList[1];
+            ClearLabelTextBlock.Text = TextList[2];
+            SaveLabelTextBlock.Text = TextList[3];
+            DragTipsTextBlock.Text = TextList[4];
+            ImportTipsTextBlock.Text = TextList[5];
+            CameraLabelTextBlock.Text = TextList[6];
+            GalleryLabelTextBlock.Text = TextList[7];
+            EnterObjectsTipsTextBlock.Text = TextList[8];
+            nameTextBox.PlaceholderText = TextList[9];
+            stepTextBlock.Text = TextList[10];
+
             initObjectPosition(objectData);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            //imageFrame.Navigate(typeof(imageGuidePage));
+
             num = 0;
 
             if (ApplicationData.Current.LocalSettings.Values["ImageNumber"] == null)
@@ -76,6 +128,7 @@ namespace IRCA
                 ApplicationData.Current.LocalSettings.Values["ImageNumber"] = 0;
             }
         }
+
         private void cameraBtn_Click(object sender, RoutedEventArgs e)
         {
             doClear();
@@ -156,15 +209,16 @@ namespace IRCA
                 inkListPanel.Children.Insert(num, tagbtn);
                 tagbtn.Click += Tag_Click;
 
-                TextBlock txtName = new TextBlock();
-                txtName.Text = objectArr[num - 1];
-                txtName.FontSize = 12;
+                TextBlock txtName = new TextBlock()
+                {
+                    Text = objectArr[num - 1],
+                    FontSize = 12
+                };
                 inkCanvasGrid.Children.Add(txtName);
                 txtName.Visibility = Visibility.Collapsed;
 
                 myCanvas canvas  = new myCanvas(num - 1,tagbtn._color);
                 mycanvasList.Add(canvas);
-                //canvas.Height = imageFrame.Height;
 
                 //form the same size of the image. in case: canvas can not change size
                 _actualWidth = (int)imageView.ActualWidth;
@@ -177,7 +231,7 @@ namespace IRCA
 
                 Tag_Click(tagList[num - 1], new RoutedEventArgs());
 
-                if (num == objectMax){addObjectBtn.Visibility = Visibility.Collapsed;}
+                if (num >= objectMax){addObjectBtn.Visibility = Visibility.Collapsed;}
             }
         }
 
@@ -211,11 +265,9 @@ namespace IRCA
                 y2 = currentContactPt.Y;
 
                 coordinateLabel.Text = "x:" + (int)(((int)x2 / App._accu) / _actualWidth) + ", y:" + (int)(((int)y2 / App._accu) / _actualHeight);
-                //coordinateLabel.Text = "x:" + (int)(x2 / _actualWidth * App._accu) + ", y:" + (int)(y2 / _actualHeight * App._accu);
-
+                
                 objectData[(int)(((int)x2 / App._accu) / _actualWidth), (int)(((int)y2 / App._accu) / _actualHeight)] = stepTextBlock.Text;
-                //objectData[(int)(x2 / _actualWidth * App._accu), (int)(y2 / _actualHeight * App._accu)] = stepTextBlock.Text;
-
+                
                 if (Distance(x1, y1, x2, y2) > 2.0) 
                 {
                     Line line = new Line()
@@ -345,13 +397,15 @@ namespace IRCA
             tagList.Clear();
             mycanvasList.Clear();
             coordinateLabel.Text = "";
-            stepTextBlock.Text = "Waiting";
+            stepTextBlock.Text = TextList[10];
 
-            SolidColorBrush mySolidColorBrush = new SolidColorBrush();
-            mySolidColorBrush.Color = Colors.White;
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush()
+            {
+                Color = Colors.White
+            };
             DragTipsRect.Fill = mySolidColorBrush;
             
-            DragTipsTextBlock.Text = "Please import or drag the image.";
+            DragTipsTextBlock.Text = TextList[4];
             DragTipsGrid.Visibility = Visibility.Visible;
 
             imageView.Source = null;
@@ -412,7 +466,7 @@ namespace IRCA
                         SolidColorBrush mySolidColorBrush = new SolidColorBrush();
                         mySolidColorBrush.Color = Colors.White;
                         DragTipsRect.Fill = mySolidColorBrush;
-                        DragTipsTextBlock.Text = "The file is not in JPG or PNG image format.";
+                        DragTipsTextBlock.Text = TextList[11];
                     }
                 }
             }
@@ -421,15 +475,11 @@ namespace IRCA
         private void imageDrawingGrid_DragOver(object sender, DragEventArgs e)
         {
             e.AcceptedOperation = DataPackageOperation.Copy;
-            //e.DragUIOverride.Caption = "drop to create a custom sound and tile";
-            //e.DragUIOverride.IsCaptionVisible = true;
-            //e.DragUIOverride.IsContentVisible = true;
-            //e.DragUIOverride.IsGlyphVisible = true;
-            //e.DragUIOverride.SetContentFromBitmapImage(new BitmapImage(new Uri("ms-appx:///Assets/clippy.jpg")));
+
             SolidColorBrush mySolidColorBrush = new SolidColorBrush();
             mySolidColorBrush.Color = Colors.Red;
             DragTipsRect.Fill = mySolidColorBrush;
-            DragTipsTextBlock.Text = "Drag and loose here!";
+            DragTipsTextBlock.Text = TextList[12];
         }
 
         private void ImageDrawingGrid_DragLeave(object sender, DragEventArgs e)
@@ -437,7 +487,7 @@ namespace IRCA
             SolidColorBrush mySolidColorBrush = new SolidColorBrush();
             mySolidColorBrush.Color = Colors.White;
             DragTipsRect.Fill = mySolidColorBrush;
-            DragTipsTextBlock.Text = "Please import or drag the image.";
+            DragTipsTextBlock.Text = TextList[4];
         }
 
         private async void doCameraPickImage()
