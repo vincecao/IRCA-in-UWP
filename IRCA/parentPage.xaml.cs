@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Devices.Input;
@@ -358,7 +359,7 @@ namespace IRCA
             doCreateItems(image, imageId, objectArr, objectData);           
         }
 
-        private void doCreateItems(WriteableBitmap image, int imageId, String[] objectArr, string[,] objectData)
+        private async void doCreateItems(WriteableBitmap image, int imageId, String[] objectArr, string[,] objectData)
         {
             try
             {
@@ -371,6 +372,12 @@ namespace IRCA
                 doClear();
 
                 ApplicationData.Current.LocalSettings.Values["ImageNumber"] = imageId + 1;
+
+                //save Image Number as json
+                StringBuilder json = new StringBuilder(JsonConvert.SerializeObject(ApplicationData.Current.LocalSettings.Values["ImageNumber"]));
+                var FileName = "imagenumberconfig";
+                await items.SaveJsonToFileAsync(FileName, json);
+
             }
             catch
             {
@@ -381,11 +388,13 @@ namespace IRCA
         private async void doSave(WriteableBitmap image, Items items, int imageId)
         {
             //save as json
-            string json = JsonConvert.SerializeObject(items);
-            await items.SaveJsonToFileAsync(imageId, json);
+            StringBuilder json = new StringBuilder(JsonConvert.SerializeObject(items));
+            var FileName = "myconfig_" + imageId;
+            await items.SaveJsonToFileAsync(FileName, json);
 
             //output image file
-            await items.SaveBitmapToFileAsync(image, imageId + "_Picture");
+            var ImageName = imageId + "_Picture";
+            await items.SaveBitmapToFileAsync(image, ImageName);
 
             //output as txt file
             //await items.SaveTxtDataToFileAsync(imageId + "_Position", objectData); 

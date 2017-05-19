@@ -10,153 +10,337 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>bde92871-e2bd-46d0-9726-64a50d54fc8d</PackageIdentityName>
     <PackageIdentityPublisher>CN=qq234</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\AppX</LayoutDir>
+    <LayoutDir>C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\BadgeLogo.scale-125.png">
+      <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\BadgeLogo.scale-150.png">
+      <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\BadgeLogo.scale-200.png">
+      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\BadgeLogo.scale-400.png">
+      <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\clrcompression.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\IRCA.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\IRCA.dll">
       <PackagePath>IRCA.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\IRCA.exe">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\IRCA.exe">
       <PackagePath>IRCA.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\IRCA.pdb">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\IRCA.pdb">
       <PackagePath>IRCA.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Graphics.Canvas.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Graphics.Canvas.winmd">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Robmikh.CompositionSurfaceFactory.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Robmikh.CompositionSurfaceFactory.dll">
       <PackagePath>Robmikh.CompositionSurfaceFactory.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\Robmikh.CompositionSurfaceFactory.winmd">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\Robmikh.CompositionSurfaceFactory.winmd">
       <PackagePath>Robmikh.CompositionSurfaceFactory.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\vstest.executionengine.WindowsPhone.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\vstest.executionengine.WindowsPhone.dll">
       <PackagePath>vstest.executionengine.WindowsPhone.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\vstest_executionengine_platformbridge.dll">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\vstest_executionengine_platformbridge.dll">
       <PackagePath>vstest_executionengine_platformbridge.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\vstest_executionengine_platformbridge.winmd">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\vstest_executionengine_platformbridge.winmd">
       <PackagePath>vstest_executionengine_platformbridge.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\_Resources\0.rsrc">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\_Resources\0.rsrc">
       <PackagePath>_Resources\0.rsrc</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\_Resources\1.rsrc">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\_Resources\1.rsrc">
       <PackagePath>_Resources\1.rsrc</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\_Resources\2.rsrc">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\_Resources\2.rsrc">
       <PackagePath>_Resources\2.rsrc</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\_Resources\3.rsrc">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\_Resources\3.rsrc">
       <PackagePath>_Resources\3.rsrc</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\_Resources\4.rsrc">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\_Resources\4.rsrc">
       <PackagePath>_Resources\4.rsrc</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\_Resources\5.rsrc">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\_Resources\5.rsrc">
       <PackagePath>_Resources\5.rsrc</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\_Resources\6.rsrc">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\_Resources\6.rsrc">
       <PackagePath>_Resources\6.rsrc</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x86\Release\ilc\_Resources\index.txt">
+    <AppxPackagedFile Include="C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x86\Release\ilc\_Resources\index.txt">
       <PackagePath>_Resources\index.txt</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

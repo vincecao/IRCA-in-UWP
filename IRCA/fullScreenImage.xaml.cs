@@ -87,11 +87,11 @@ namespace IRCA
         }
 
         //read json
-        private static async Task<string> DeserializeFileAsync(string JsonFile, StorageFolder storageFolder)
+        public async Task<string> DeserializeFileAsync(string JsonFile, StorageFolder storageFolder)
         {
             try
             {
-                storageFolder = await storageFolder.GetFolderAsync("Json");
+                storageFolder = await storageFolder.CreateFolderAsync("Json", CreationCollisionOption.OpenIfExists);
                 StorageFile localFile = await storageFolder.GetFileAsync(JsonFile);
                 return await FileIO.ReadTextAsync(localFile);
             }

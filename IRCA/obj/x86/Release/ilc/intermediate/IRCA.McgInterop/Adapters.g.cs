@@ -241,982 +241,6 @@ namespace System.Runtime.InteropServices.WindowsRuntime
 
 	}
 
-	public static class IVectorSharedReferenceTypesRCWAdapter
-	{
-	    public static T Indexer_Get<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        int index)
-	    {
-	        if (index < 0)
-	            throw new global::System.ArgumentOutOfRangeException("index");
-
-	        return GetAt(_this, (uint)index);
-	    }
-
-	    public static void Indexer_Set<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        int index,
-	        T value)
-	    {
-	        if (index < 0)
-	            throw new global::System.ArgumentOutOfRangeException("index");
-
-	        SetAt(_this, (uint)index, value);
-	    }
-
-	    public static int IndexOf<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        T item)
-	    {
-	        uint index;
-	        bool exists = IVectorSharedReferenceTypesStubClass.IndexOf(_this, item, out index);
-
-	        if (!exists)
-	            return -1;
-
-	        if (((uint)System.Int32.MaxValue) < index)
-	        {
-	            throw new global::System.InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CollectionBackingListTooLarge));
-	        }
-
-	        return (int)index;
-	    }
-
-	    public static void Insert<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        int index,
-	        T item)
-	    {
-	        if (index < 0)
-	            throw new global::System.ArgumentOutOfRangeException("index");
-
-	        InsertAtHelper(_this, (uint)index, item);
-	    }
-
-	    public static void RemoveAt<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        int index)
-	    {
-	        if (index < 0)
-	            throw new global::System.ArgumentOutOfRangeException("index");
-
-	        RemoveAtHelper(_this, (uint)index);
-	    }
-
-	    public static T GetAt<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        uint index)
-	    {
-	        try
-	        {
-	            return IVectorSharedReferenceTypesStubClass.GetAt(_this, index);
-	        }
-	        catch (System.Exception ex)
-	        {
-	            if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
-	                throw new global::System.ArgumentOutOfRangeException("index");
-
-	            throw;
-	        }
-	    }
-
-	    public static void SetAt<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        uint index,
-	        T value)
-	    {
-	        try
-	        {
-	            IVectorSharedReferenceTypesStubClass.SetAt(_this, index, value);
-	        }
-	        catch (System.Exception ex)
-	        {
-	            if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
-	                throw new global::System.ArgumentOutOfRangeException("index");
-
-	            throw;
-	        }
-	    }
-
-	    public static int Count<T>(
-	            global::System.Collections.Generic.IList<T> _this)
-	    {
-	        uint size = IVectorSharedReferenceTypesStubClass.get_Size(_this);
-	        if (((uint)System.Int32.MaxValue) < size)
-	        {
-	            throw new global::System.InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CollectionBackingListTooLarge));
-	        }
-
-	        return (int)size;
-	    }
-
-	    public static bool IsReadOnly<T>(
-	        global::System.Collections.Generic.IList<T> _this)
-	    {
-	        return false;
-	    }
-
-	    public static void Add<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        T item)
-	    {
-	        IVectorSharedReferenceTypesStubClass.Append(_this, item);
-	    }
-
-	    public static void Clear<T>(
-	        global::System.Collections.Generic.IList<T> _this)
-	    {
-	        IVectorSharedReferenceTypesStubClass.Clear(_this);
-	    }
-
-	    public static bool Contains<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        T item)
-	    {
-	        uint index;
-	        return IVectorSharedReferenceTypesStubClass.IndexOf(_this, item, out index);
-	    }
-
-	    public static void CopyTo<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        T[] array,
-	        int arrayIndex)
-	    {
-	        int count = Count(_this);
-
-	        global::System.Exception error = global::__Interop.McgHelpers.CheckCopyTo(count, array, arrayIndex);
-
-	        if (error != null)
-	        {
-	            throw error;
-	        }
-
-	        for (int i = 0; i < count; i++)
-	        {
-	            array[i + arrayIndex] = GetAt(_this, (uint)i);
-	        }
-	    }
-
-	    public static bool Remove<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        T item)
-	    {
-	        uint index;
-	        bool exists = IVectorSharedReferenceTypesStubClass.IndexOf(_this, item, out index);
-
-	        if (!exists)
-	            return false;
-
-	        if (((uint)System.Int32.MaxValue) < index)
-	        {
-	            throw new global::System.InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CollectionBackingListTooLarge));
-	        }
-
-	        RemoveAtHelper(_this, index);
-	        return true;
-	    }
-
-	    private static void InsertAtHelper<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        uint index,
-	        T item)
-	    {
-	        try
-	        {
-	            IVectorSharedReferenceTypesStubClass.InsertAt(_this, index, item);
-	        }
-	        catch (System.Exception ex)
-	        {
-	            if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
-	                throw new global::System.ArgumentOutOfRangeException("index");
-
-	            throw;
-	        }
-	    }
-
-	    private static void RemoveAtHelper<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        uint index)
-	    {
-	        try
-	        {
-	            IVectorSharedReferenceTypesStubClass.RemoveAt(_this, index);
-	        }
-	        catch (System.Exception ex)
-	        {
-	            if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
-	                throw new global::System.ArgumentOutOfRangeException("index");
-
-	            throw;
-	        }
-	    }
-	}
-
-	public static unsafe class IVectorSharedReferenceTypesStubClass
-	{
-	    public const int idx_GetAt = 6;
-	    public const int idx_get_Size = 7;
-	    public const int idx_GetView = 8;
-	    public const int idx_IndexOf = 9;
-	    public const int idx_SetAt = 10;
-	    public const int idx_InsertAt = 11;
-	    public const int idx_RemoveAt = 12;
-	    public const int idx_Append = 13;
-	    public const int idx_RemoveAtEnd = 14;
-	    public const int idx_Clear = 15;
-	    public const int idx_GetMany = 16;
-	    public const int idx_ReplaceAll = 17;
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static T GetAt<T>(global::System.Collections.Generic.IList<T> _this, uint index)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_GetAt];
-	        global::System.IntPtr unsafeValue = global::System.IntPtr.Zero;
-
-	        try
-	        {
-	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, index, (void*)&unsafeValue);
-	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	            global::System.GC.KeepAlive(_this);
-
-	            if (result < 0)
-	            {
-	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	            }
-
-	            return (T)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(unsafeValue, typeof(T).TypeHandle);
-	        }
-	        finally
-	        {
-	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeValue);
-	        }
-	    }
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static void SetAt<T>(global::System.Collections.Generic.IList<T> _this, uint index, T value)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_SetAt];
-	        global::System.IntPtr unsafeValue = global::System.IntPtr.Zero;
-
-	        try
-	        {
-	            unsafeValue = global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(value, typeof(T).TypeHandle);
-	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, index, (void*)unsafeValue);
-	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	            global::System.GC.KeepAlive(_this);
-
-	            if (result < 0)
-	            {
-	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	            }
-	        }
-	        finally
-	        {
-	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeValue);
-	        }
-	    }
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static bool IndexOf<T>(global::System.Collections.Generic.IList<T> _this, T item, out uint index)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_IndexOf];
-	        global::System.IntPtr unsafeItem = global::System.IntPtr.Zero;
-	        uint unsafeIndex;
-	        bool found;
-
-	        try
-	        {
-	            unsafeItem = global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(item, typeof(T).TypeHandle);
-	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, (void*)unsafeItem, &unsafeIndex, &found);
-	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	            global::System.GC.KeepAlive(_this);
-
-	            if (result < 0)
-	            {
-	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	            }
-
-	            index = unsafeIndex;
-	            return found;
-	        }
-	        finally
-	        {
-	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeItem);
-	        }
-	    }
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static void InsertAt<T>(global::System.Collections.Generic.IList<T> _this, uint index, T item)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_InsertAt];
-	        global::System.IntPtr unsafeItem = global::System.IntPtr.Zero;
-
-	        try
-	        {
-	            unsafeItem = global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(item, typeof(T).TypeHandle);
-	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, index, (void*)unsafeItem);
-	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	            global::System.GC.KeepAlive(_this);
-
-	            if (result < 0)
-	            {
-	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	            }
-	        }
-	        finally
-	        {
-	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeItem);
-	        }
-	    }
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static void RemoveAt<T>(global::System.Collections.Generic.IList<T> _this, uint index)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_RemoveAt];
-
-	        int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, index);
-	        global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	        global::System.GC.KeepAlive(_this);
-
-	        if (result < 0)
-	        {
-	            throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	        }
-	    }
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static uint get_Size<T>(global::System.Collections.Generic.IList<T> _this)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_get_Size];
-	        uint unsafeSize;
-
-	        int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, (void*)&unsafeSize);
-	        global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	        global::System.GC.KeepAlive(_this);
-
-	        if (result < 0)
-	        {
-	            throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	        }
-
-	        return unsafeSize;
-	    }
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static void Append<T>(global::System.Collections.Generic.IList<T> _this, T item)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_Append];
-	        global::System.IntPtr unsafeItem = global::System.IntPtr.Zero;
-
-	        try
-	        {
-	            unsafeItem = global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(item, typeof(T).TypeHandle);
-	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, (void*)unsafeItem);
-	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	            global::System.GC.KeepAlive(_this);
-
-	            if (result < 0)
-	            {
-	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	            }
-	        }
-	        finally
-	        {
-	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeItem);
-	        }
-	    }
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static void Clear<T>(global::System.Collections.Generic.IList<T> _this)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_Clear];
-
-	        int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis);
-	        global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	        global::System.GC.KeepAlive(_this);
-
-	        if (result < 0)
-	        {
-	            throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	        }
-	    }
-	}
-
-	// Specialization: GetMany,string
-	public static class IVector_CCWAdapter 
-	{
-	    // T GetAt(uint index)
-	    public static T GetAt<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        uint index)
-	    {
-	        EnsureIndexInt32(index, _this.Count);
-
-	        try
-	        {
-	            return _this[(int)index];
-	        }
-	        catch (System.ArgumentOutOfRangeException ex)
-	        {
-	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
-	            throw;
-	        }
-	    }
-
-	    // uint Size { get }
-	    public static uint get_Size<T>(
-	        global::System.Collections.Generic.IList<T> _this
-	        )
-	    {
-	        return (uint)_this.Count;
-	    }
-
-	    // IVectorView<T> GetView()
-	    public static global::System.Collections.Generic.IReadOnlyList<T> GetView<T>(
-	        global::System.Collections.Generic.IList<T> _this
-	        )
-	    {
-	        //Contract.Assert(_this != null);
-
-	        // Note: This list is not really read-only - you could QI for a modifiable
-	        // list.  We gain some perf by doing this.  We believe this is acceptable.
-	        global::System.Collections.Generic.IReadOnlyList<T> roList = _this as global::System.Collections.Generic.IReadOnlyList<T>;
-	        if (roList == null)
-	        {
-	            roList = new global::System.Collections.ObjectModel.ReadOnlyCollection<T>(_this);
-	        }
-	        return roList;
-	    }
-
-	    // bool IndexOf(T value, out uint index)
-	    public static bool IndexOf<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        T value,
-	        out uint index)
-	    {
-	        int ind = _this.IndexOf(value);
-
-	        if (-1 == ind)
-	        {
-	            index = 0;
-	            return false;
-	        }
-
-	        index = (uint)ind;
-	        return true;
-	    }
-
-	    // void SetAt(uint index, T value)
-	    public static void SetAt<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        uint index,
-	        T value)
-	    {
-	        EnsureIndexInt32(index, _this.Count);
-
-	        try
-	        {
-	            _this[(int)index] = value;
-	        }
-	        catch (System.ArgumentOutOfRangeException ex)
-	        {
-	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
-	            throw;
-	        }
-	    }
-
-	    // void InsertAt(uint index, T value)
-	    public static void InsertAt<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        uint index,
-	        T value)
-	    {
-	        // Inserting at an index one past the end of the list is equivalent to appending
-	        // so we need to ensure that we're within (0, count + 1).
-	        EnsureIndexInt32(index, _this.Count + 1);
-
-	        try
-	        {
-	            _this.Insert((int)index, value);
-	        }
-	        catch (System.ArgumentOutOfRangeException ex)
-	        {
-	            // Change error code to match what WinRT expects
-	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
-	            throw;
-	        }
-	    }
-
-	    // void RemoveAt(uint index)
-	    public static void RemoveAt<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        uint index)
-	    {
-	        EnsureIndexInt32(index, _this.Count);
-
-	        try
-	        {
-	            _this.RemoveAt((int)index);
-	        }
-	        catch (System.ArgumentOutOfRangeException ex)
-	        {
-	            // Change error code to match what WinRT expects
-	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
-	            throw;
-	        }
-	    }
-
-	    // void Append(T value)
-	    public static void Append<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        T value)
-	    {
-	        _this.Add(value);
-	    }
-
-	    // void RemoveAtEnd()
-	    public static void RemoveAtEnd<T>(
-	        global::System.Collections.Generic.IList<T> _this)
-	    {
-	        uint size = (uint)_this.Count;
-	        
-	        if (size == 0)
-	        {
-	            InvalidOperationException ex = new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CannotRemoveFromEmptyCollection));
-
-	            // Change error code to match what WinRT expects
-	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
-	            throw ex;
-	        }
-
-	        RemoveAt<T>(_this, size - 1);
-	    }
-
-	    // void Clear()
-	    public static void Clear<T>(
-	        global::System.Collections.Generic.IList<T> _this)
-	    {
-	        _this.Clear();
-	    }
-
-	    // uint GetMany(uint startIndex, T[] items)
-	    public static uint GetMany<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        uint startIndex,
-	        T[] items)
-	    {
-	        return GetManyHelper<T>(_this, startIndex, items);
-	    }
-
-	    // @TODO - Weird shared CCW support that I don't really understand. Get rid of this.
-	    public static uint GetMany_string(
-	        global::System.Collections.Generic.IList<string> _this,
-	        uint startIndex,
-	        string[] items)
-	    {
-	        return GetManyHelper<string>(_this, startIndex, items);
-	    }
-
-	    // void ReplaceAll(T[] items)
-	    public static void ReplaceAll<T>(
-	        global::System.Collections.Generic.IList<T> _this,
-	        T[] items)
-	    {
-	        _this.Clear();
-
-	        if (items != null)
-	        {
-	            for (int i = 0; i < items.Length; i ++)
-	            {
-	                _this.Add(items[i]);
-	            }
-	        }
-	    }
-
-	    // Helpers:
-
-	    private static void EnsureIndexInt32(uint index, int listCapacity)
-	    {
-	        // We use '<=' and not '<' becasue Int32.MaxValue == index would imply
-	        // that Size > Int32.MaxValue:
-	        if (((uint)System.Int32.MaxValue) <= index || index >= (uint)listCapacity)
-	        {
-	            global::System.Exception ex = new global::System.ArgumentOutOfRangeException(
-	                "index", 
-	                global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_IndexLargerThanMaxValue)
-	            );
-	            McgMarshal.SetExceptionErrorCode(
-	                ex,
-	                global::__Interop.McgHelpers.__HResults.E_BOUNDS
-	            );
-	            throw ex;
-	        }
-	    }
-
-	    private static uint GetManyHelper<T>(global::System.Collections.Generic.IList<T> sourceList, uint startIndex, T[] items)
-	    {
-	        int count = sourceList.Count;
-
-	        // Calling GetMany with a start index equal to the size of the list should always
-	        // return 0 elements, regardless of the input item size
-	        if (startIndex == count)
-	        {
-	            return 0;
-	        }
-
-	        EnsureIndexInt32(startIndex, count);
-
-	        if (items == null)
-	        {
-	            return 0;
-	        }
-
-	        uint itemCount = global::System.Math.Min((uint)items.Length, (uint) count - startIndex);
-	        
-	        for (uint i = 0; i < itemCount; ++i)
-	        {
-	            items[i] = sourceList[(int)(i + startIndex)];
-	        }
-
-	        return itemCount;
-	    }
-	}
-
-	public class IIterableSharedReferenceTypesDynamicAdapter<T> :
-	    global::System.Runtime.InteropServices.ComInterfaceDynamicAdapter,
-	    global::System.Collections.IEnumerable
-	{
-	    public global::System.Collections.IEnumerator GetEnumerator()
-	    {
-	        return new global::System.Runtime.InteropServices.WindowsRuntime.IIterator_PrivateRCWAdapter<T>(
-	            IIterableSharedReferenceTypesStubClass.First((global::System.Collections.Generic.IEnumerable<T>)ComObject));
-	    }
-	}
-
-	public static unsafe class IIterableSharedReferenceTypesStubClass
-	{
-	    public const int idx_First = 6;
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static global::Windows.Foundation.Collections.IIterator<T> First<T>(global::System.Collections.Generic.IEnumerable<T> _this)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IEnumerable<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_First];
-	        global::System.IntPtr unsafeIterator = global::System.IntPtr.Zero;
-
-	        try
-	        {
-	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, (void*)&unsafeIterator);
-	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	            global::System.GC.KeepAlive(_this);
-
-	            if (result < 0)
-	            {
-	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	            }
-
-	            return (global::Windows.Foundation.Collections.IIterator<T>)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(unsafeIterator, typeof(global::Windows.Foundation.Collections.IIterator<T>).TypeHandle);
-	        }
-	        finally
-	        {
-	            global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(unsafeIterator);
-	        }
-	    }
-	}
-
-	public static class IIterable_CCWAdapter 
-	{
-	    public static global::Windows.Foundation.Collections.IIterator<T> First<T>(global::System.Collections.Generic.IEnumerable<T> _this)
-	    {
-	        return new IIteratorOfT_PrivateCCWAdapter<T>(_this.GetEnumerator());
-	    }
-	}
-
-	public sealed class IIterator_PrivateRCWAdapter<T> : global::System.Collections.Generic.IEnumerator<T>
-	{
-	    private global::Windows.Foundation.Collections.IIterator<T> m_iterator;
-	    private bool m_hadCurrent;
-	    private T m_current;
-	    private bool m_isInitialized;
-
-	    internal IIterator_PrivateRCWAdapter(global::Windows.Foundation.Collections.IIterator<T> iterator)
-	    {
-	        //Contract.Requires(iterator != null);
-	        m_iterator = iterator;
-	        m_hadCurrent = true;
-	        m_isInitialized = false;
-	    }
-
-	    public T Current
-	    {
-	        get
-	        {
-	            // The enumerator has not been advanced to the first element yet.
-	            if (!m_isInitialized)
-	            {
-	                throw new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_EnumNotStarted));
-	            }
-
-	            // The enumerator has reached the end of the collection
-	            if (!m_hadCurrent)
-	            {
-	                throw new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_EnumEnded));
-	            }
-	            
-	            return m_current;
-	        }
-	    }
-
-	    object global::System.Collections.IEnumerator.Current
-	    {
-	        get
-	        {
-	            // The enumerator has not been advanced to the first element yet.
-	            if (!m_isInitialized)
-	            {
-	                throw new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_EnumNotStarted));
-	            }
-	            
-	            // The enumerator has reached the end of the collection
-	            if (!m_hadCurrent)
-	            {
-	                throw new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_EnumEnded));
-	            }
-	            
-	            return m_current;
-	        }
-	    }
-	    
-	    public bool MoveNext()
-	    {
-	        // If we've passed the end of the iteration, IEnumerable<T> should return false, while
-	        // IIterable will fail the interface call
-	        if (!m_hadCurrent)
-	        {
-	            return false;
-	        }
-
-	        // IIterators start at index 0, rather than -1.  If this is the first call, we need to just
-	        // check HasCurrent rather than actually moving to the next element
-	        try
-	        {
-	            if (!m_isInitialized)
-	            {
-	                m_hadCurrent = m_iterator.get_HasCurrent();
-	                m_isInitialized = true;
-	            }
-	            else
-	            {
-	                m_hadCurrent = m_iterator.MoveNext();
-	            }
-
-	            // We want to save away the current value for two reasons:
-	            //  1. Accessing .Current is cheap on other iterators, so having it be a property which is a
-	            //     simple field access preserves the expected performance characteristics (as opposed to
-	            //     triggering a COM call every time the property is accessed)
-	            //
-	            //  2. This allows us to preserve the same semantics as generic collection iteration when iterating
-	            //     beyond the end of the collection - namely that Current continues to return the last value
-	            //     of the collection
-	            if (m_hadCurrent)
-	            {
-	                m_current = m_iterator.get_Current();
-	            }
-	        }
-	        catch (System.Exception ex)
-	        {
-	            // Translate E_CHANGED_STATE into an InvalidOperationException for an updated enumeration
-	            if (global::__Interop.McgHelpers.__HResults.E_CHANGED_STATE == ex.HResult)
-	            {
-	                throw new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_EnumFailedVersion));
-	            }
-
-	            throw;
-	        }
-
-	        return m_hadCurrent;
-	    }
-
-	    public void Reset()
-	    {
-	        throw new NotSupportedException();
-	    }
-
-	    public void Dispose()
-	    {
-	    }
-	}
-
-
-	public static class IVectorViewSharedReferenceTypesRCWAdapter
-	{
-	    public static T Indexer_Get<T>(
-	        global::System.Collections.Generic.IReadOnlyList<T> _this,
-	        int index)
-	    {
-	        if (index < 0)
-	            throw new global::System.ArgumentOutOfRangeException("index");
-
-	        return GetAt(_this, (uint)index);
-	    }
-
-	    public static int Count<T>(
-	        global::System.Collections.Generic.IReadOnlyList<T> _this)
-	    {
-	        uint size = IVectorViewSharedReferenceTypesStubClass.get_Size(_this);
-	        if (((uint)System.Int32.MaxValue) < size)
-	        {
-	            throw new global::System.InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CollectionBackingListTooLarge));
-	        }
-
-	        return (int)size;
-	    }
-
-	    public static T GetAt<T>(
-	        global::System.Collections.Generic.IReadOnlyList<T> _this,
-	        uint index)
-	    {
-	        try
-	        {
-	            return IVectorViewSharedReferenceTypesStubClass.GetAt(_this, index);
-	        }
-	        catch (System.Exception ex)
-	        {
-	            if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
-	                throw new global::System.ArgumentOutOfRangeException("index");
-
-	            throw;
-	        }
-	    }
-	}
-
-	public class IVectorViewSharedReferenceTypesDynamicAdapter<T> :
-	    global::System.Runtime.InteropServices.ComInterfaceDynamicAdapter, 
-	    global::System.Collections.IEnumerable, 
-	    global::System.Runtime.InteropServices.WindowsRuntime.IReadOnlyListAdapter<T>
-	{
-	    public int Count
-	    {
-	        get
-	        {
-	            uint size = IVectorViewSharedReferenceTypesStubClass.get_Size((global::System.Collections.Generic.IReadOnlyList<T>)ComObject);
-	            if (((uint)System.Int32.MaxValue) < size)
-	            {
-	                throw new global::System.InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CollectionBackingListTooLarge));
-	            }
-
-	            return (int)size;
-	        }
-	    }
-
-	    public T this[int index]
-	    {
-	        get
-	        {
-	            if (index < 0)
-	                throw new global::System.ArgumentOutOfRangeException("index");
-
-	            try
-	            {
-	                return IVectorViewSharedReferenceTypesStubClass.GetAt((global::System.Collections.Generic.IReadOnlyList<T>)ComObject, (uint)index);
-	            }
-	            catch (System.Exception ex)
-	            {
-	                if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
-	                    throw new global::System.ArgumentOutOfRangeException("index");
-	                throw;
-	            }
-	        }
-	    }
-
-	    public global::System.Collections.IEnumerator GetEnumerator()
-	    {
-	        return new global::System.Runtime.InteropServices.WindowsRuntime.IIterator_PrivateRCWAdapter<T>(
-	            IIterableSharedReferenceTypesStubClass.First((global::System.Collections.Generic.IEnumerable<T>)ComObject));
-	    }
-	}
-
-	public static unsafe class IVectorViewSharedReferenceTypesStubClass
-	{
-	    public const int idx_GetAt = 6;
-	    public const int idx_get_Size = 7;
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static T GetAt<T>(global::System.Collections.Generic.IReadOnlyList<T> _this, uint index)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IReadOnlyList<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_GetAt];
-	        global::System.IntPtr unsafeValue = global::System.IntPtr.Zero;
-
-	        try
-	        {
-	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, index, (void*)&unsafeValue);
-	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	            global::System.GC.KeepAlive(_this);
-
-	            if (result < 0)
-	            {
-	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	            }
-
-	            return (T)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(unsafeValue, typeof(T).TypeHandle);
-	        }
-	        finally
-	        {
-	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeValue);
-	        }
-	    }
-
-	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-	    public static uint get_Size<T>(global::System.Collections.Generic.IReadOnlyList<T> _this)
-	    {
-	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
-	            (global::System.__ComObject)_this,
-	            typeof(global::System.Collections.Generic.IReadOnlyList<T>).TypeHandle);
-	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_get_Size];
-	        uint unsafeSize;
-
-	        int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, (void*)&unsafeSize);
-	        global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-	        global::System.GC.KeepAlive(_this);
-
-	        if (result < 0)
-	        {
-	            throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
-	        }
-
-	        return unsafeSize;
-	    }
-	}
-
 	public static class IMapSharedReferenceTypesRCWAdapter 
 	{
 	    // TValue this[TKey key] { get }
@@ -1921,6 +945,130 @@ namespace System.Runtime.InteropServices.WindowsRuntime
 	    }
 	}  // class DictionaryValueEnumerator<TKey, TValue>
 
+	public static class IIterable_CCWAdapter 
+	{
+	    public static global::Windows.Foundation.Collections.IIterator<T> First<T>(global::System.Collections.Generic.IEnumerable<T> _this)
+	    {
+	        return new IIteratorOfT_PrivateCCWAdapter<T>(_this.GetEnumerator());
+	    }
+	}
+
+	public sealed class IIterator_PrivateRCWAdapter<T> : global::System.Collections.Generic.IEnumerator<T>
+	{
+	    private global::Windows.Foundation.Collections.IIterator<T> m_iterator;
+	    private bool m_hadCurrent;
+	    private T m_current;
+	    private bool m_isInitialized;
+
+	    internal IIterator_PrivateRCWAdapter(global::Windows.Foundation.Collections.IIterator<T> iterator)
+	    {
+	        //Contract.Requires(iterator != null);
+	        m_iterator = iterator;
+	        m_hadCurrent = true;
+	        m_isInitialized = false;
+	    }
+
+	    public T Current
+	    {
+	        get
+	        {
+	            // The enumerator has not been advanced to the first element yet.
+	            if (!m_isInitialized)
+	            {
+	                throw new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_EnumNotStarted));
+	            }
+
+	            // The enumerator has reached the end of the collection
+	            if (!m_hadCurrent)
+	            {
+	                throw new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_EnumEnded));
+	            }
+	            
+	            return m_current;
+	        }
+	    }
+
+	    object global::System.Collections.IEnumerator.Current
+	    {
+	        get
+	        {
+	            // The enumerator has not been advanced to the first element yet.
+	            if (!m_isInitialized)
+	            {
+	                throw new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_EnumNotStarted));
+	            }
+	            
+	            // The enumerator has reached the end of the collection
+	            if (!m_hadCurrent)
+	            {
+	                throw new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_EnumEnded));
+	            }
+	            
+	            return m_current;
+	        }
+	    }
+	    
+	    public bool MoveNext()
+	    {
+	        // If we've passed the end of the iteration, IEnumerable<T> should return false, while
+	        // IIterable will fail the interface call
+	        if (!m_hadCurrent)
+	        {
+	            return false;
+	        }
+
+	        // IIterators start at index 0, rather than -1.  If this is the first call, we need to just
+	        // check HasCurrent rather than actually moving to the next element
+	        try
+	        {
+	            if (!m_isInitialized)
+	            {
+	                m_hadCurrent = m_iterator.get_HasCurrent();
+	                m_isInitialized = true;
+	            }
+	            else
+	            {
+	                m_hadCurrent = m_iterator.MoveNext();
+	            }
+
+	            // We want to save away the current value for two reasons:
+	            //  1. Accessing .Current is cheap on other iterators, so having it be a property which is a
+	            //     simple field access preserves the expected performance characteristics (as opposed to
+	            //     triggering a COM call every time the property is accessed)
+	            //
+	            //  2. This allows us to preserve the same semantics as generic collection iteration when iterating
+	            //     beyond the end of the collection - namely that Current continues to return the last value
+	            //     of the collection
+	            if (m_hadCurrent)
+	            {
+	                m_current = m_iterator.get_Current();
+	            }
+	        }
+	        catch (System.Exception ex)
+	        {
+	            // Translate E_CHANGED_STATE into an InvalidOperationException for an updated enumeration
+	            if (global::__Interop.McgHelpers.__HResults.E_CHANGED_STATE == ex.HResult)
+	            {
+	                throw new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_EnumFailedVersion));
+	            }
+
+	            throw;
+	        }
+
+	        return m_hadCurrent;
+	    }
+
+	    public void Reset()
+	    {
+	        throw new NotSupportedException();
+	    }
+
+	    public void Dispose()
+	    {
+	    }
+	}
+
+
 	public static class IMapViewSharedReferenceTypesRCWAdapter 
 	{
 	    // int Count { get }
@@ -2598,5 +1746,857 @@ namespace System.Runtime.InteropServices.WindowsRuntime
 	    #endregion IKeyValuePair Enumerator
 
 	}  // internal ConstantSplittableMap<TKey, TValue>
+
+	public static class IVectorViewSharedReferenceTypesRCWAdapter
+	{
+	    public static T Indexer_Get<T>(
+	        global::System.Collections.Generic.IReadOnlyList<T> _this,
+	        int index)
+	    {
+	        if (index < 0)
+	            throw new global::System.ArgumentOutOfRangeException("index");
+
+	        return GetAt(_this, (uint)index);
+	    }
+
+	    public static int Count<T>(
+	        global::System.Collections.Generic.IReadOnlyList<T> _this)
+	    {
+	        uint size = IVectorViewSharedReferenceTypesStubClass.get_Size(_this);
+	        if (((uint)System.Int32.MaxValue) < size)
+	        {
+	            throw new global::System.InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CollectionBackingListTooLarge));
+	        }
+
+	        return (int)size;
+	    }
+
+	    public static T GetAt<T>(
+	        global::System.Collections.Generic.IReadOnlyList<T> _this,
+	        uint index)
+	    {
+	        try
+	        {
+	            return IVectorViewSharedReferenceTypesStubClass.GetAt(_this, index);
+	        }
+	        catch (System.Exception ex)
+	        {
+	            if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
+	                throw new global::System.ArgumentOutOfRangeException("index");
+
+	            throw;
+	        }
+	    }
+	}
+
+	public class IVectorViewSharedReferenceTypesDynamicAdapter<T> :
+	    global::System.Runtime.InteropServices.ComInterfaceDynamicAdapter, 
+	    global::System.Collections.IEnumerable, 
+	    global::System.Runtime.InteropServices.WindowsRuntime.IReadOnlyListAdapter<T>
+	{
+	    public int Count
+	    {
+	        get
+	        {
+	            uint size = IVectorViewSharedReferenceTypesStubClass.get_Size((global::System.Collections.Generic.IReadOnlyList<T>)ComObject);
+	            if (((uint)System.Int32.MaxValue) < size)
+	            {
+	                throw new global::System.InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CollectionBackingListTooLarge));
+	            }
+
+	            return (int)size;
+	        }
+	    }
+
+	    public T this[int index]
+	    {
+	        get
+	        {
+	            if (index < 0)
+	                throw new global::System.ArgumentOutOfRangeException("index");
+
+	            try
+	            {
+	                return IVectorViewSharedReferenceTypesStubClass.GetAt((global::System.Collections.Generic.IReadOnlyList<T>)ComObject, (uint)index);
+	            }
+	            catch (System.Exception ex)
+	            {
+	                if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
+	                    throw new global::System.ArgumentOutOfRangeException("index");
+	                throw;
+	            }
+	        }
+	    }
+
+	    public global::System.Collections.IEnumerator GetEnumerator()
+	    {
+	        return new global::System.Runtime.InteropServices.WindowsRuntime.IIterator_PrivateRCWAdapter<T>(
+	            IIterableSharedReferenceTypesStubClass.First((global::System.Collections.Generic.IEnumerable<T>)ComObject));
+	    }
+	}
+
+	public static unsafe class IVectorViewSharedReferenceTypesStubClass
+	{
+	    public const int idx_GetAt = 6;
+	    public const int idx_get_Size = 7;
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static T GetAt<T>(global::System.Collections.Generic.IReadOnlyList<T> _this, uint index)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IReadOnlyList<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_GetAt];
+	        global::System.IntPtr unsafeValue = global::System.IntPtr.Zero;
+
+	        try
+	        {
+	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, index, (void*)&unsafeValue);
+	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	            global::System.GC.KeepAlive(_this);
+
+	            if (result < 0)
+	            {
+	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	            }
+
+	            return (T)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(unsafeValue, typeof(T).TypeHandle);
+	        }
+	        finally
+	        {
+	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeValue);
+	        }
+	    }
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static uint get_Size<T>(global::System.Collections.Generic.IReadOnlyList<T> _this)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IReadOnlyList<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_get_Size];
+	        uint unsafeSize;
+
+	        int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, (void*)&unsafeSize);
+	        global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	        global::System.GC.KeepAlive(_this);
+
+	        if (result < 0)
+	        {
+	            throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	        }
+
+	        return unsafeSize;
+	    }
+	}
+
+	public class IIterableSharedReferenceTypesDynamicAdapter<T> :
+	    global::System.Runtime.InteropServices.ComInterfaceDynamicAdapter,
+	    global::System.Collections.IEnumerable
+	{
+	    public global::System.Collections.IEnumerator GetEnumerator()
+	    {
+	        return new global::System.Runtime.InteropServices.WindowsRuntime.IIterator_PrivateRCWAdapter<T>(
+	            IIterableSharedReferenceTypesStubClass.First((global::System.Collections.Generic.IEnumerable<T>)ComObject));
+	    }
+	}
+
+	public static unsafe class IIterableSharedReferenceTypesStubClass
+	{
+	    public const int idx_First = 6;
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static global::Windows.Foundation.Collections.IIterator<T> First<T>(global::System.Collections.Generic.IEnumerable<T> _this)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IEnumerable<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_First];
+	        global::System.IntPtr unsafeIterator = global::System.IntPtr.Zero;
+
+	        try
+	        {
+	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, (void*)&unsafeIterator);
+	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	            global::System.GC.KeepAlive(_this);
+
+	            if (result < 0)
+	            {
+	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	            }
+
+	            return (global::Windows.Foundation.Collections.IIterator<T>)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(unsafeIterator, typeof(global::Windows.Foundation.Collections.IIterator<T>).TypeHandle);
+	        }
+	        finally
+	        {
+	            global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(unsafeIterator);
+	        }
+	    }
+	}
+
+	public static class IVectorSharedReferenceTypesRCWAdapter
+	{
+	    public static T Indexer_Get<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        int index)
+	    {
+	        if (index < 0)
+	            throw new global::System.ArgumentOutOfRangeException("index");
+
+	        return GetAt(_this, (uint)index);
+	    }
+
+	    public static void Indexer_Set<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        int index,
+	        T value)
+	    {
+	        if (index < 0)
+	            throw new global::System.ArgumentOutOfRangeException("index");
+
+	        SetAt(_this, (uint)index, value);
+	    }
+
+	    public static int IndexOf<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        T item)
+	    {
+	        uint index;
+	        bool exists = IVectorSharedReferenceTypesStubClass.IndexOf(_this, item, out index);
+
+	        if (!exists)
+	            return -1;
+
+	        if (((uint)System.Int32.MaxValue) < index)
+	        {
+	            throw new global::System.InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CollectionBackingListTooLarge));
+	        }
+
+	        return (int)index;
+	    }
+
+	    public static void Insert<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        int index,
+	        T item)
+	    {
+	        if (index < 0)
+	            throw new global::System.ArgumentOutOfRangeException("index");
+
+	        InsertAtHelper(_this, (uint)index, item);
+	    }
+
+	    public static void RemoveAt<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        int index)
+	    {
+	        if (index < 0)
+	            throw new global::System.ArgumentOutOfRangeException("index");
+
+	        RemoveAtHelper(_this, (uint)index);
+	    }
+
+	    public static T GetAt<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        uint index)
+	    {
+	        try
+	        {
+	            return IVectorSharedReferenceTypesStubClass.GetAt(_this, index);
+	        }
+	        catch (System.Exception ex)
+	        {
+	            if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
+	                throw new global::System.ArgumentOutOfRangeException("index");
+
+	            throw;
+	        }
+	    }
+
+	    public static void SetAt<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        uint index,
+	        T value)
+	    {
+	        try
+	        {
+	            IVectorSharedReferenceTypesStubClass.SetAt(_this, index, value);
+	        }
+	        catch (System.Exception ex)
+	        {
+	            if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
+	                throw new global::System.ArgumentOutOfRangeException("index");
+
+	            throw;
+	        }
+	    }
+
+	    public static int Count<T>(
+	            global::System.Collections.Generic.IList<T> _this)
+	    {
+	        uint size = IVectorSharedReferenceTypesStubClass.get_Size(_this);
+	        if (((uint)System.Int32.MaxValue) < size)
+	        {
+	            throw new global::System.InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CollectionBackingListTooLarge));
+	        }
+
+	        return (int)size;
+	    }
+
+	    public static bool IsReadOnly<T>(
+	        global::System.Collections.Generic.IList<T> _this)
+	    {
+	        return false;
+	    }
+
+	    public static void Add<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        T item)
+	    {
+	        IVectorSharedReferenceTypesStubClass.Append(_this, item);
+	    }
+
+	    public static void Clear<T>(
+	        global::System.Collections.Generic.IList<T> _this)
+	    {
+	        IVectorSharedReferenceTypesStubClass.Clear(_this);
+	    }
+
+	    public static bool Contains<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        T item)
+	    {
+	        uint index;
+	        return IVectorSharedReferenceTypesStubClass.IndexOf(_this, item, out index);
+	    }
+
+	    public static void CopyTo<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        T[] array,
+	        int arrayIndex)
+	    {
+	        int count = Count(_this);
+
+	        global::System.Exception error = global::__Interop.McgHelpers.CheckCopyTo(count, array, arrayIndex);
+
+	        if (error != null)
+	        {
+	            throw error;
+	        }
+
+	        for (int i = 0; i < count; i++)
+	        {
+	            array[i + arrayIndex] = GetAt(_this, (uint)i);
+	        }
+	    }
+
+	    public static bool Remove<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        T item)
+	    {
+	        uint index;
+	        bool exists = IVectorSharedReferenceTypesStubClass.IndexOf(_this, item, out index);
+
+	        if (!exists)
+	            return false;
+
+	        if (((uint)System.Int32.MaxValue) < index)
+	        {
+	            throw new global::System.InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CollectionBackingListTooLarge));
+	        }
+
+	        RemoveAtHelper(_this, index);
+	        return true;
+	    }
+
+	    private static void InsertAtHelper<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        uint index,
+	        T item)
+	    {
+	        try
+	        {
+	            IVectorSharedReferenceTypesStubClass.InsertAt(_this, index, item);
+	        }
+	        catch (System.Exception ex)
+	        {
+	            if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
+	                throw new global::System.ArgumentOutOfRangeException("index");
+
+	            throw;
+	        }
+	    }
+
+	    private static void RemoveAtHelper<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        uint index)
+	    {
+	        try
+	        {
+	            IVectorSharedReferenceTypesStubClass.RemoveAt(_this, index);
+	        }
+	        catch (System.Exception ex)
+	        {
+	            if (global::__Interop.McgHelpers.__HResults.E_BOUNDS == ex.HResult)
+	                throw new global::System.ArgumentOutOfRangeException("index");
+
+	            throw;
+	        }
+	    }
+	}
+
+	public static unsafe class IVectorSharedReferenceTypesStubClass
+	{
+	    public const int idx_GetAt = 6;
+	    public const int idx_get_Size = 7;
+	    public const int idx_GetView = 8;
+	    public const int idx_IndexOf = 9;
+	    public const int idx_SetAt = 10;
+	    public const int idx_InsertAt = 11;
+	    public const int idx_RemoveAt = 12;
+	    public const int idx_Append = 13;
+	    public const int idx_RemoveAtEnd = 14;
+	    public const int idx_Clear = 15;
+	    public const int idx_GetMany = 16;
+	    public const int idx_ReplaceAll = 17;
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static T GetAt<T>(global::System.Collections.Generic.IList<T> _this, uint index)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_GetAt];
+	        global::System.IntPtr unsafeValue = global::System.IntPtr.Zero;
+
+	        try
+	        {
+	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, index, (void*)&unsafeValue);
+	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	            global::System.GC.KeepAlive(_this);
+
+	            if (result < 0)
+	            {
+	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	            }
+
+	            return (T)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(unsafeValue, typeof(T).TypeHandle);
+	        }
+	        finally
+	        {
+	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeValue);
+	        }
+	    }
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static void SetAt<T>(global::System.Collections.Generic.IList<T> _this, uint index, T value)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_SetAt];
+	        global::System.IntPtr unsafeValue = global::System.IntPtr.Zero;
+
+	        try
+	        {
+	            unsafeValue = global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(value, typeof(T).TypeHandle);
+	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, index, (void*)unsafeValue);
+	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	            global::System.GC.KeepAlive(_this);
+
+	            if (result < 0)
+	            {
+	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	            }
+	        }
+	        finally
+	        {
+	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeValue);
+	        }
+	    }
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static bool IndexOf<T>(global::System.Collections.Generic.IList<T> _this, T item, out uint index)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_IndexOf];
+	        global::System.IntPtr unsafeItem = global::System.IntPtr.Zero;
+	        uint unsafeIndex;
+	        bool found;
+
+	        try
+	        {
+	            unsafeItem = global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(item, typeof(T).TypeHandle);
+	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, (void*)unsafeItem, &unsafeIndex, &found);
+	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	            global::System.GC.KeepAlive(_this);
+
+	            if (result < 0)
+	            {
+	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	            }
+
+	            index = unsafeIndex;
+	            return found;
+	        }
+	        finally
+	        {
+	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeItem);
+	        }
+	    }
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static void InsertAt<T>(global::System.Collections.Generic.IList<T> _this, uint index, T item)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_InsertAt];
+	        global::System.IntPtr unsafeItem = global::System.IntPtr.Zero;
+
+	        try
+	        {
+	            unsafeItem = global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(item, typeof(T).TypeHandle);
+	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, index, (void*)unsafeItem);
+	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	            global::System.GC.KeepAlive(_this);
+
+	            if (result < 0)
+	            {
+	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	            }
+	        }
+	        finally
+	        {
+	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeItem);
+	        }
+	    }
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static void RemoveAt<T>(global::System.Collections.Generic.IList<T> _this, uint index)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_RemoveAt];
+
+	        int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, index);
+	        global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	        global::System.GC.KeepAlive(_this);
+
+	        if (result < 0)
+	        {
+	            throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	        }
+	    }
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static uint get_Size<T>(global::System.Collections.Generic.IList<T> _this)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_get_Size];
+	        uint unsafeSize;
+
+	        int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, (void*)&unsafeSize);
+	        global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	        global::System.GC.KeepAlive(_this);
+
+	        if (result < 0)
+	        {
+	            throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	        }
+
+	        return unsafeSize;
+	    }
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static void Append<T>(global::System.Collections.Generic.IList<T> _this, T item)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_Append];
+	        global::System.IntPtr unsafeItem = global::System.IntPtr.Zero;
+
+	        try
+	        {
+	            unsafeItem = global::System.Runtime.InteropServices.McgMarshal.ObjectToComInterface(item, typeof(T).TypeHandle);
+	            int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis, (void*)unsafeItem);
+	            global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	            global::System.GC.KeepAlive(_this);
+
+	            if (result < 0)
+	            {
+	                throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	            }
+	        }
+	        finally
+	        {
+	            global::System.Runtime.InteropServices.McgMarshal.CleanupNative<T>(unsafeItem);
+	        }
+	    }
+
+	    [global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+	    public static void Clear<T>(global::System.Collections.Generic.IList<T> _this)
+	    {
+	        global::System.IntPtr unsafeThis = global::System.Runtime.InteropServices.McgMarshal.GetInterface(
+	            (global::System.__ComObject)_this,
+	            typeof(global::System.Collections.Generic.IList<T>).TypeHandle);
+	        global::System.IntPtr target = (*((global::System.IntPtr**)unsafeThis))[idx_Clear];
+
+	        int result = Intrinsics.StdCall__int__(target, (void*)unsafeThis);
+	        global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+	        global::System.GC.KeepAlive(_this);
+
+	        if (result < 0)
+	        {
+	            throw global::System.Runtime.InteropServices.McgMarshal.GetExceptionForHR(result, /* isWinRTScenario = */ true);
+	        }
+	    }
+	}
+
+	// Specialization: GetMany,string
+	public static class IVector_CCWAdapter 
+	{
+	    // T GetAt(uint index)
+	    public static T GetAt<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        uint index)
+	    {
+	        EnsureIndexInt32(index, _this.Count);
+
+	        try
+	        {
+	            return _this[(int)index];
+	        }
+	        catch (System.ArgumentOutOfRangeException ex)
+	        {
+	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
+	            throw;
+	        }
+	    }
+
+	    // uint Size { get }
+	    public static uint get_Size<T>(
+	        global::System.Collections.Generic.IList<T> _this
+	        )
+	    {
+	        return (uint)_this.Count;
+	    }
+
+	    // IVectorView<T> GetView()
+	    public static global::System.Collections.Generic.IReadOnlyList<T> GetView<T>(
+	        global::System.Collections.Generic.IList<T> _this
+	        )
+	    {
+	        //Contract.Assert(_this != null);
+
+	        // Note: This list is not really read-only - you could QI for a modifiable
+	        // list.  We gain some perf by doing this.  We believe this is acceptable.
+	        global::System.Collections.Generic.IReadOnlyList<T> roList = _this as global::System.Collections.Generic.IReadOnlyList<T>;
+	        if (roList == null)
+	        {
+	            roList = new global::System.Collections.ObjectModel.ReadOnlyCollection<T>(_this);
+	        }
+	        return roList;
+	    }
+
+	    // bool IndexOf(T value, out uint index)
+	    public static bool IndexOf<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        T value,
+	        out uint index)
+	    {
+	        int ind = _this.IndexOf(value);
+
+	        if (-1 == ind)
+	        {
+	            index = 0;
+	            return false;
+	        }
+
+	        index = (uint)ind;
+	        return true;
+	    }
+
+	    // void SetAt(uint index, T value)
+	    public static void SetAt<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        uint index,
+	        T value)
+	    {
+	        EnsureIndexInt32(index, _this.Count);
+
+	        try
+	        {
+	            _this[(int)index] = value;
+	        }
+	        catch (System.ArgumentOutOfRangeException ex)
+	        {
+	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
+	            throw;
+	        }
+	    }
+
+	    // void InsertAt(uint index, T value)
+	    public static void InsertAt<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        uint index,
+	        T value)
+	    {
+	        // Inserting at an index one past the end of the list is equivalent to appending
+	        // so we need to ensure that we're within (0, count + 1).
+	        EnsureIndexInt32(index, _this.Count + 1);
+
+	        try
+	        {
+	            _this.Insert((int)index, value);
+	        }
+	        catch (System.ArgumentOutOfRangeException ex)
+	        {
+	            // Change error code to match what WinRT expects
+	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
+	            throw;
+	        }
+	    }
+
+	    // void RemoveAt(uint index)
+	    public static void RemoveAt<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        uint index)
+	    {
+	        EnsureIndexInt32(index, _this.Count);
+
+	        try
+	        {
+	            _this.RemoveAt((int)index);
+	        }
+	        catch (System.ArgumentOutOfRangeException ex)
+	        {
+	            // Change error code to match what WinRT expects
+	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
+	            throw;
+	        }
+	    }
+
+	    // void Append(T value)
+	    public static void Append<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        T value)
+	    {
+	        _this.Add(value);
+	    }
+
+	    // void RemoveAtEnd()
+	    public static void RemoveAtEnd<T>(
+	        global::System.Collections.Generic.IList<T> _this)
+	    {
+	        uint size = (uint)_this.Count;
+	        
+	        if (size == 0)
+	        {
+	            InvalidOperationException ex = new InvalidOperationException(global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_CannotRemoveFromEmptyCollection));
+
+	            // Change error code to match what WinRT expects
+	            McgMarshal.SetExceptionErrorCode(ex, global::__Interop.McgHelpers.__HResults.E_BOUNDS);
+	            throw ex;
+	        }
+
+	        RemoveAt<T>(_this, size - 1);
+	    }
+
+	    // void Clear()
+	    public static void Clear<T>(
+	        global::System.Collections.Generic.IList<T> _this)
+	    {
+	        _this.Clear();
+	    }
+
+	    // uint GetMany(uint startIndex, T[] items)
+	    public static uint GetMany<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        uint startIndex,
+	        T[] items)
+	    {
+	        return GetManyHelper<T>(_this, startIndex, items);
+	    }
+
+	    // @TODO - Weird shared CCW support that I don't really understand. Get rid of this.
+	    public static uint GetMany_string(
+	        global::System.Collections.Generic.IList<string> _this,
+	        uint startIndex,
+	        string[] items)
+	    {
+	        return GetManyHelper<string>(_this, startIndex, items);
+	    }
+
+	    // void ReplaceAll(T[] items)
+	    public static void ReplaceAll<T>(
+	        global::System.Collections.Generic.IList<T> _this,
+	        T[] items)
+	    {
+	        _this.Clear();
+
+	        if (items != null)
+	        {
+	            for (int i = 0; i < items.Length; i ++)
+	            {
+	                _this.Add(items[i]);
+	            }
+	        }
+	    }
+
+	    // Helpers:
+
+	    private static void EnsureIndexInt32(uint index, int listCapacity)
+	    {
+	        // We use '<=' and not '<' becasue Int32.MaxValue == index would imply
+	        // that Size > Int32.MaxValue:
+	        if (((uint)System.Int32.MaxValue) <= index || index >= (uint)listCapacity)
+	        {
+	            global::System.Exception ex = new global::System.ArgumentOutOfRangeException(
+	                "index", 
+	                global::Mcg.System.SR.GetString(global::Mcg.System.SR.Excep_IndexLargerThanMaxValue)
+	            );
+	            McgMarshal.SetExceptionErrorCode(
+	                ex,
+	                global::__Interop.McgHelpers.__HResults.E_BOUNDS
+	            );
+	            throw ex;
+	        }
+	    }
+
+	    private static uint GetManyHelper<T>(global::System.Collections.Generic.IList<T> sourceList, uint startIndex, T[] items)
+	    {
+	        int count = sourceList.Count;
+
+	        // Calling GetMany with a start index equal to the size of the list should always
+	        // return 0 elements, regardless of the input item size
+	        if (startIndex == count)
+	        {
+	            return 0;
+	        }
+
+	        EnsureIndexInt32(startIndex, count);
+
+	        if (items == null)
+	        {
+	            return 0;
+	        }
+
+	        uint itemCount = global::System.Math.Min((uint)items.Length, (uint) count - startIndex);
+	        
+	        for (uint i = 0; i < itemCount; ++i)
+	        {
+	            items[i] = sourceList[(int)(i + startIndex)];
+	        }
+
+	        return itemCount;
+	    }
+	}
 }
 

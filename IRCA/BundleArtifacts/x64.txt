@@ -1,2 +1,2 @@
-MainPackage=C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\bin\x64\Debug\IRCA_1.0.5.0_x64_Debug.appx
-SymbolPackage=C:\Users\qq234\Desktop\App\IRCA_1.0.5.0_Debug_Test\IRCA_1.0.5.0_x64_Debug.appxsym
+MainPackage=C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\bin\x64\Release\IRCA_1.0.7.0_x64.appx
+SymbolPackage=C:\Users\qq234\Desktop\App\IRCA_1.0.7.0_Test\IRCA_1.0.7.0_x64.appxsym

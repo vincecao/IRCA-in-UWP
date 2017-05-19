@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-zh-hans"
+"ResourceDimensions"		"language-zh-cn"
+
+[Files]
+"C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\obj\x64\Release\split.language-zh-hans.pri"			"resources.pri"

@@ -1,10 +1,10 @@
 FullName=Microsoft.Build.ILTasks.ILTransformInternalTask
-InputAssembly=C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\obj\x86\Release\ilc\in\System.Runtime.WindowsRuntime.dll
-OutputAssembly=C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\obj\x86\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll
+InputAssembly=C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\obj\x86\Release\ilc\in\System.Runtime.WindowsRuntime.dll
+OutputAssembly=C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\obj\x86\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll
 UseILOutputPrefix=False
 LibPathsCount=2
 LibPath=C:\Users\qq234\.nuget\packages\microsoft.net.native.compiler\1.6.2\tools\x86\ilc\lib\Private\
-LibPath=C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\obj\x86\Release\ilc\in\
+LibPath=C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\obj\x86\Release\ilc\in\
 CoreAssemblyName=System.Private.CoreLib
 SkipWritingTransformedAssembly=False
 DontSaveUnlessChangesMade=False

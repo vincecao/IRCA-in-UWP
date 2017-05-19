@@ -1,0 +1,1 @@
+C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\IRCA.csproj;arm

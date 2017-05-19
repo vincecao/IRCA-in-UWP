@@ -1,5 +1,5 @@
-/In:"C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\obj\x86\Release\ilc\in"
-/Lib:"C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\obj\x86\Release\ilc\in"
+/In:"C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\obj\x86\Release\ilc\in"
+/Lib:"C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\obj\x86\Release\ilc\in"
 /Lib:"C:\Users\qq234\.nuget\packages\microsoft.net.native.compiler\1.6.2\tools\x86\ilc\lib\Private"
 /Lib:"C:\Program Files (x86)\Windows Kits\10\References\Windows.ApplicationModel.Activation.ActivatedEventsContract\1.0.0.0"
 /Lib:"C:\Program Files (x86)\Windows Kits\10\References\Windows.ApplicationModel.Activation.ActivationCameraSettingsContract\1.0.0.0"
@@ -56,6 +56,6 @@
 /Lib:"C:\Program Files (x86)\Windows Kits\10\References\Windows.UI.WebUI.Core.WebUICommandBarContract\1.0.0.0"
 /Lib:"C:\Program Files (x86)\Windows Kits\10\References\Windows.UI.Xaml.Hosting.HostingContract\1.0.0.0"
 /Lib:"C:\Program Files (x86)\Windows Kits\10\References\Windows.Web.Http.Diagnostics.HttpDiagnosticsContract\2.0.0.0"
-/WinMD:"C:\Users\qq234\Documents\GitHub\IRCA-in-UWP\IRCA\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
+/WinMD:"C:\Users\qq234\Documents\Visual Studio 2017\Projects\IRCA-UWP\IRCA\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
 /RdXmlPath:"C:\Users\qq234\.nuget\packages\microsoft.net.native.compiler\1.6.2\tools\LibraryXML"
 /RunOnlyPreDR

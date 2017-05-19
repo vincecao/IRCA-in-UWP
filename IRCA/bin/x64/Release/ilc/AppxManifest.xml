@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="bde92871-e2bd-46d0-9726-64a50d54fc8d" Publisher="CN=qq234" Version="1.0.0.0" ProcessorArchitecture="x64" />
+  <Identity Name="bde92871-e2bd-46d0-9726-64a50d54fc8d" Publisher="CN=qq234" Version="1.0.7.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="bde92871-e2bd-46d0-9726-64a50d54fc8d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>IRCA</DisplayName>
@@ -25,7 +25,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="IRCA.exe" EntryPoint="IRCA.App">
-      <uap:VisualElements DisplayName="IRCA" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="IRCA" BackgroundColor="transparent">
+      <uap:VisualElements DisplayName="IRCA in UWP" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="IRCA" BackgroundColor="transparent">
         <uap:LockScreen Notification="badge" BadgeLogo="Assets\BadgeLogo.png" />
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
           <uap:ShowNameOnTiles>
@@ -177,14 +177,14 @@
     <build:Item Name="VisualStudio" Version="15.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2017" />
     <build:Item Name="OperatingSystem" Version="10.0.15063.0 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.26403.7" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.26419.1" />
     <build:Item Name="ProjectGUID" Value="{8E8098CE-3094-46DB-A70B-1BCFDB27D5A3}" />
     <build:Item Name="ilc.exe" Version="1.6.25221.00 built by: PROJECTNGDR1" />
     <build:Item Name="OptimizingToolset" Value="ilc.exe" />
     <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="True" />
     <build:Item Name="UniversalGenericsOptOut" Value="false" />
     <build:Item Name="ShortcutGenericAnalysis" Value="false" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.26403.7" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.26419.1" />
     <build:Item Name="TestPlatform.Universal" Version="15.0" />
     <build:Item Name="WindowsDesktop" Version="10.0.14393.0" />
     <build:Item Name="WindowsMobile" Version="10.0.14393.0" />

@@ -85,12 +85,21 @@ namespace IRCA
             localStorage.Values[imageIdNmae + "PositionData"] = objectData;
         }
 
-        public async Task SaveJsonToFileAsync(int imageId, string json)
+        public async Task SaveJsonToFileAsync(string FileName, StringBuilder json)
         {
             StorageFolder storageFolder = await ApplicationData.Current.LocalFolder.CreateFolderAsync("Save", CreationCollisionOption.OpenIfExists);
-            storageFolder = await storageFolder.CreateFolderAsync("Json", CreationCollisionOption.OpenIfExists);
-            var file = await storageFolder.CreateFileAsync("myconfig_" + imageId + ".json", CreationCollisionOption.ReplaceExisting);
-            await FileIO.WriteTextAsync(file, json); //out put as json
+            if(FileName == "imagenumberconfig")
+            {
+
+            }
+            else
+            {
+                storageFolder = await storageFolder.CreateFolderAsync("Json", CreationCollisionOption.OpenIfExists);
+            }
+            
+            //var file = await storageFolder.CreateFileAsync("myconfig_" + imageId + ".json", CreationCollisionOption.ReplaceExisting);
+            var file = await storageFolder.CreateFileAsync(FileName + ".json", CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(file, json.ToString()); //out put as json
         }
     }
 }

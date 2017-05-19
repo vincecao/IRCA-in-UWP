@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="bde92871-e2bd-46d0-9726-64a50d54fc8d" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>UNPLATED</AlternateForm>
+			<Language>EN-US</Language>
+			<Scale>200</Scale>
+			<TargetSize>256,16,24,32,48</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/App.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="childPage.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/childPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="fullScreenImage.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/fullScreenImage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IRCA.xr.xml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/IRCA.xr.xml">
+				<Candidate type="Path">
+					<Value>IRCA.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/MainPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="parentPage.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/parentPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="settingPage.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/settingPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="sharePage.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/sharePage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="BadgeLogo.png" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Assets/BadgeLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\BadgeLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LargeTile.png" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Assets/LargeTile.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\LargeTile.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallTile.png" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Assets/SmallTile.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SmallTile.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Assets/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square150x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Assets/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-48, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-48" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-unplated_targetsize-24.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-24.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls">
+				<NamedResource name="Microsoft.Toolkit.Uwp.UI.Controls.xr.xml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="BladeView">
+					<NamedResource name="BladeView.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="BladeView.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Carousel">
+					<NamedResource name="Carousel.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/Carousel/Carousel.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Carousel.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/Carousel/Carousel.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="DropShadowPanel">
+					<NamedResource name="DropShadowPanel.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel/DropShadowPanel.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="DropShadowPanel.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel/DropShadowPanel.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Expander">
+					<NamedResource name="Expander.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/Expander/Expander.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Expander.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/Expander/Expander.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="GridSplitter">
+					<NamedResource name="GridSplitter.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/GridSplitter/GridSplitter.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="GridSplitter.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/GridSplitter/GridSplitter.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="HamburgerMenu">
+					<NamedResource name="HamburgerMenu.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/HamburgerMenu/HamburgerMenu.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\HamburgerMenu\HamburgerMenu.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="HamburgerMenu.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/HamburgerMenu/HamburgerMenu.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="HeaderedTextBlock">
+					<NamedResource name="HeaderedTextBlock.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="HeaderedTextBlock.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ImageEx">
+					<NamedResource name="ImageEx.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx/ImageEx.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ImageEx.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx/ImageEx.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Loading">
+					<NamedResource name="Loading.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/Loading/Loading.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Loading.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/Loading/Loading.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="MarkdownTextBlock">
+					<NamedResource name="MarkdownTextBlock.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/MarkdownTextBlock.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="MarkdownTextBlock.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/MarkdownTextBlock.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="MasterDetailsView">
+					<NamedResource name="MasterDetailsView.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/MasterDetailsView/MasterDetailsView.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="MasterDetailsView.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/MasterDetailsView/MasterDetailsView.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="PullToRefreshListView">
+					<NamedResource name="PullToRefreshListView.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/PullToRefreshListView/PullToRefreshListView.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\PullToRefreshListView\PullToRefreshListView.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="PullToRefreshListView.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/PullToRefreshListView/PullToRefreshListView.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RadialGauge">
+					<NamedResource name="RadialGauge.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/RadialGauge/RadialGauge.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="RadialGauge.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/RadialGauge/RadialGauge.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RangeSelector">
+					<NamedResource name="RangeSelector.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="RangeSelector.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RotatorTile">
+					<NamedResource name="RotatorTile.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="RotatorTile.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ScrollHeader">
+					<NamedResource name="ScrollHeader.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader/ScrollHeader.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScrollHeader.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader/ScrollHeader.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="SlidableListItem">
+					<NamedResource name="SlidableListItem.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/SlidableListItem/SlidableListItem.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\SlidableListItem\SlidableListItem.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="SlidableListItem.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/SlidableListItem/SlidableListItem.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/Themes/Generic.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="TileControl">
+					<NamedResource name="TileControl.xaml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TileControl.xbf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.VisualStudio.TestPlatform.Common.Resources">
+			<NamedResource name="AnotherDiscoveryRequestInProgress" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/AnotherDiscoveryRequestInProgress">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A discovery request is already in progress. Only one active discovery request is supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="AppxManifestReadError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/AppxManifestReadError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to read manifest file with Error: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="AppxRegistrationFailure" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/AppxRegistrationFailure">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to launch test executor process '{0}'.  Package {1} registration failed with Error Code: 0x{2:X} and Error Message:{3}.\nFor more details look into Event Viewer under Applications and Services Logs -&gt; Microsoft -&gt; Windows -&gt; AppXDeployment-Server -&gt; Microsoft-Windows-AppXDeploymentServer/Operational.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotAcceptTestResultWhenTestIsCanceled" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/CannotAcceptTestResultWhenTestIsCanceled">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The test result cannot be accepted as the test execution has been canceled.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotBeNullOrEmpty" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/CannotBeNullOrEmpty">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The parameter cannot be null or empty.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CollectionEmpty" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/CollectionEmpty">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>There should be at least one entry in the collection: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CommandLineError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/CommandLineError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CommandLineInformational" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/CommandLineInformational">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Information: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CommandLineWarning" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/CommandLineWarning">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Warning: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataCollectionMessageFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/DataCollectionMessageFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Diagnostic data adapter message: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataCollectorMessageFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/DataCollectorMessageFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Diagnostic data adapter ('{0}') message: {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataCollectorUnsupportedMessageType" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/DataCollectorUnsupportedMessageType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Sending message of Message Type '{0}' is not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DiscovererInstantiationException" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/DiscovererInstantiationException">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Exception occurred while instantiating discoverer : {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DiscoveryAbortNotSupportedInProc" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/DiscoveryAbortNotSupportedInProc">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>You can abort a test discovery request only during an /InIsolation execution.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DuplicateAdaptersFound" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/DuplicateAdaptersFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Multiple test adapters with the same uri '{0}' were found. Ignoring adapter '{1}'. Please uninstall the conflicting adapter(s) to avoid this warning.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DuplicateExtensionUri" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/DuplicateExtensionUri">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Duplicate test extension URI '{0}'.  Ignoring the duplicate extension.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DuplicateSettingsName" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/DuplicateSettingsName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Duplicate settings provider named '{0}'.  Ignoring the duplicate provider.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DuplicateSettingsProvided" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/DuplicateSettingsProvided">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Duplicated run settings section named '{0}' found.  Ignoring the duplicate settings.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DuplicateSource" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/DuplicateSource">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Ignoring the specified duplicate source '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EmptyParenthsis" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/EmptyParenthsis">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Empty parenthesis ( )</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EnableShutdownAfterTestRunBeingSetToFalse" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/EnableShutdownAfterTestRunBeingSetToFalse">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>EnableShutdownAfterTestRun cannot be disabled within a test run. For the next test run, the test run will start with disabled state.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EnableShutdownAfterTestRunWhenKeepAliveIsFalse" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/EnableShutdownAfterTestRunWhenKeepAliveIsFalse">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>EnableShutdownAfterTestRun cannot be enabled if KeepAlive is false.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorHandlerEventMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/ErrorHandlerEventMessage">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error Handler Exception: {0} \r\n {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExceptionFromJobProcessor" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/ExceptionFromJobProcessor">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Unhandled exception occurred while processing a job from the '{0}' queue: {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExceptionFromLoadTests" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/ExceptionFromLoadTests">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An exception occurred while test discoverer '{0}' was loading tests. Exception: {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExceptionFromRunTests" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/ExceptionFromRunTests">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An exception occurred while invoking executor '{0}': {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Execution_DataCollectorEventTimeout" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/Execution_DataCollectorEventTimeout">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Timed out invoking diagnostic data adapter event handler '{0}'.
+
+To increase the timeout values for all diagnostic data adapters, see the following link: http://go.microsoft.com/fwlink/?LinkId=169311 </Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FailedToFindInstalledUnitTestExtensions" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/FailedToFindInstalledUnitTestExtensions">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to find the list of installed unit test extensions. Reason: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IgnoringExecutorAsNoDefaultExecutorUriAttribute" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/IgnoringExecutorAsNoDefaultExecutorUriAttribute">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Ignoring the test executor corresponding to test discoverer {0} because the discoverer does not have the DefaultExecutorUri attribute . You might need to re-install the test adapter add-in.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidCondition" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/InvalidCondition">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Invalid Condition '{0}'</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidExtensionUriFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/InvalidExtensionUriFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Test Extension has an invalid URI '{0}': {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidOperator" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/InvalidOperator">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Invalid operator '{0}'</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidRunSettingsRootNode" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/InvalidRunSettingsRootNode">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The root node of the run settings must be named 'RunSettings'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LaunchDebugProcessNotAllowedForANonDebugRun" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/LaunchDebugProcessNotAllowedForANonDebugRun">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>This operation is not allowed in the context of a non-debug run.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LoggerInitializationError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/LoggerInitializationError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Exception occurred while initializing logger with URI '{0}'.  The logger will not be used.  Exception: {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LoggerNotFound" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/LoggerNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not find a test logger with URI or FriendlyName '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingCloseParenthesis" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/MissingCloseParenthesis">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Missing ')'</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingOpenParenthesis" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/MissingOpenParenthesis">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Missing '('</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingOperand" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/MissingOperand">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Missing operand</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingOperator" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/MissingOperator">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Missing Operator '|' or '&amp;'</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoDiscovererRegistered" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/NoDiscovererRegistered">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No test discoverer is registered to perform discovery of test cases. Register a test discoverer and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoDiscovererRegisteredForTestSource" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/NoDiscovererRegisteredForTestSource">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No test discoverer is registered to perform discovery for the type of test source '{0}'. Register a test discoverer for this source type and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoDiscoveryRequest" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/NoDiscoveryRequest">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No test could be found because no discovery request has been made. Execute a discovery request and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoMatchingExecutor" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/NoMatchingExecutor">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not find test executor with URI '{0}'.  Make sure that the test executor is installed and supports .net runtime version {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoTestsFoundInContainer" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/NoTestsFoundInContainer">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No tests are discovered from the container '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoValidSourceFoundForDiscovery" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/NoValidSourceFoundForDiscovery">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>None of the specified source(s) '{0}' is valid. Fix the above errors/warnings and then try again. </Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NumberOfTestCasesCannotBeLessThanOne" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/NumberOfTestCasesCannotBeLessThanOne">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>There should be at least  one test to retrieve.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="QueueAlreadyDisposed" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/QueueAlreadyDisposed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The {0} queue has already been disposed.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="QueuePausedDisposeError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/QueuePausedDisposeError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The {0} queue cannot be disposed while paused.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReportDataCollectorException" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/ReportDataCollectorException">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Diagnostic data adapter caught an exception of type '{0}': '{1}'. More details: {2}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RunSettingsAlreadyLoaded" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/RunSettingsAlreadyLoaded">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The Run Settings have already been loaded.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RunSettingsParseError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/RunSettingsParseError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An error occurred while loading the run settings.  Error: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ServiceSecurityUserNotAllowed" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/ServiceSecurityUserNotAllowed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>You are not authorized to perform this operation.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SettingsNodeInvalidName" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/SettingsNodeInvalidName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid settings node specified. The name property of the settings node must be non-empty.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SettingsProviderInitializationError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/SettingsProviderInitializationError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An error occurred while initializing the settings provider named '{0}'. Error: {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SettingsProviderNotFound" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/SettingsProviderNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Settings Provider named '{0}' was not found.  The settings can not be loaded.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="StartIndexShouldBeNonNegative" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/StartIndexShouldBeNonNegative">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Starting index from which test cases are retrieved should be non-negative.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="StringSeperator" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/StringSeperator">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>, </Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SupportedTransferTypeIsFileTransfer" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/SupportedTransferTypeIsFileTransfer">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Diagnostic data adapter can send collection logs as files. Sending data as stream is not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCaseFilterFormatException" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/TestCaseFilterFormatException">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Incorrect format for TestCaseFilter {0}. Specify the correct format and try again. Note that the incorrect format can lead to no test getting executed.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestLoggerQueueName" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/TestLoggerQueueName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Test Logger</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestRunFailed_NoTestsAreAvailable" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/TestRunFailed_NoTestsAreAvailable">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No test is available in the provided sources. Make sure that installed test discoverers &amp; executors, platform &amp; framework version settings are appropriate and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestRunFailed_NoTestsAreAvailableInTheSources" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/TestRunFailed_NoTestsAreAvailableInTheSources">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No test is available in {0}. Make sure that installed test discoverers &amp; executors, platform &amp; framework version settings are appropriate and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnsupportedPropertiesInTestCaseFilter" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/UnsupportedPropertiesInTestCaseFilter">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No tests matched the filter because it contains one or more properties that are not valid ({0}). Specify filter expression containing valid properties ({1}) and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WeakEventsOnlyInstanceMethodsSupportedExceptionText" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/WeakEventsOnlyInstanceMethodsSupportedExceptionText">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A test method must be an instance method.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WrongDataCollectionContextType" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Common.Resources/WrongDataCollectionContextType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Types deriving from the data collection context cannot be used for sending data and messages.  The DataCollectionContext used for sending data and messages must come from one of the events raised to the data collector.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.VisualStudio.TestPlatform.Core.Resources">
+			<NamedResource name="AnotherDiscoveryRequestInProgress" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/AnotherDiscoveryRequestInProgress">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A discovery request is already in progress. Only one active discovery request is supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="AppxManifestReadError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/AppxManifestReadError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to read manifest file with Error: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="AppxRegistrationFailure" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/AppxRegistrationFailure">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to launch test executor process '{0}'.  Package {1} registration failed with Error Code: 0x{2:X} and Error Message:{3}.\nFor more details look into Event Viewer under Applications and Services Logs -&gt; Microsoft -&gt; Windows -&gt; AppXDeployment-Server -&gt; Microsoft-Windows-AppXDeploymentServer/Operational.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotAcceptTestResultWhenTestIsCanceled" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/CannotAcceptTestResultWhenTestIsCanceled">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The test result cannot be accepted as the test execution has been canceled.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CollectionEmpty" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/CollectionEmpty">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>There should be at least one entry in the collection: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataCollectionMessageFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/DataCollectionMessageFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Diagnostic data adapter message: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataCollectorMessageFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/DataCollectorMessageFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Diagnostic data adapter ('{0}') message: {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DiscovererInstantiationException" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/DiscovererInstantiationException">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Exception occurred while instantiating discoverer : {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DiscoveryAbortNotSupportedInProc" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/DiscoveryAbortNotSupportedInProc">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>You can abort a test discovery request only during an /InIsolation execution.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DuplicateAdaptersFound" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/DuplicateAdaptersFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Multiple test adapters with the same uri '{0}' were found. Ignoring adapter '{1}'. Please uninstall the conflicting adapter(s) to avoid this warning.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DuplicateExtensionUri" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/DuplicateExtensionUri">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Duplicate test extension URI '{0}'.  Ignoring the duplicate extension.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DuplicateSettingsName" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/DuplicateSettingsName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Duplicate settings provider named '{0}'.  Ignoring the duplicate provider.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DuplicateSettingsProvided" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/DuplicateSettingsProvided">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Duplicated run settings section named '{0}' found.  Ignoring the duplicate settings.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DuplicateSource" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/DuplicateSource">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Ignoring the specified duplicate source '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EmptyParenthsis" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/EmptyParenthsis">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Empty parenthesis ( )</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EnableShutdownAfterTestRunBeingSetToFalse" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/EnableShutdownAfterTestRunBeingSetToFalse">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>EnableShutdownAfterTestRun cannot be disabled within a test run. For the next test run, the test run will start with disabled state.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EnableShutdownAfterTestRunWhenKeepAliveIsFalse" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/EnableShutdownAfterTestRunWhenKeepAliveIsFalse">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>EnableShutdownAfterTestRun cannot be enabled if KeepAlive is false.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorHandlerEventMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/ErrorHandlerEventMessage">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error Handler Exception: {0} \r\n {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExceptionFromJobProcessor" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/ExceptionFromJobProcessor">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Unhandled exception occurred while processing a job from the '{0}' queue: {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExceptionFromLoadTests" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/ExceptionFromLoadTests">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An exception occurred while test discoverer '{0}' was loading tests. Exception: {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExceptionFromRunTests" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/ExceptionFromRunTests">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An exception occurred while invoking executor '{0}': {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FailedToFindInstalledUnitTestExtensions" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/FailedToFindInstalledUnitTestExtensions">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to find the list of installed unit test extensions. Reason: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IgnoringExecutorAsNoDefaultExecutorUriAttribute" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/IgnoringExecutorAsNoDefaultExecutorUriAttribute">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Ignoring the test executor corresponding to test discoverer {0} because the discoverer does not have the DefaultExecutorUri attribute . You might need to re-install the test adapter add-in.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidCondition" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/InvalidCondition">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Invalid Condition '{0}'</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidExtensionUriFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/InvalidExtensionUriFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Test Extension has an invalid URI '{0}': {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidOperator" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/InvalidOperator">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Invalid operator '{0}'</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidRunSettingsRootNode" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/InvalidRunSettingsRootNode">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The root node of the run settings must be named 'RunSettings'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LaunchDebugProcessNotAllowedForANonDebugRun" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/LaunchDebugProcessNotAllowedForANonDebugRun">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>This operation is not allowed in the context of a non-debug run.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LoggerInitializationError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/LoggerInitializationError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Exception occurred while initializing logger with URI '{0}'.  The logger will not be used.  Exception: {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LoggerNotFound" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/LoggerNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not find a test logger with URI or FriendlyName '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingCloseParenthesis" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/MissingCloseParenthesis">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Missing ')'</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingOpenParenthesis" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/MissingOpenParenthesis">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Missing '('</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingOperand" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/MissingOperand">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error: Missing operand</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingOperator" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/MissingOperator">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Missing Operator '|' or '&amp;'</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoDiscovererRegistered" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/NoDiscovererRegistered">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No test discoverer is registered to perform discovery of test cases. Register a test discoverer and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoDiscovererRegisteredForTestSource" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/NoDiscovererRegisteredForTestSource">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No test discoverer is registered to perform discovery for the type of test source '{0}'. Register a test discoverer for this source type and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoDiscoveryRequest" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/NoDiscoveryRequest">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No test could be found because no discovery request has been made. Execute a discovery request and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoMatchingExecutor" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/NoMatchingExecutor">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not find test executor with URI '{0}'.  Make sure that the test executor is installed and supports .net runtime version {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoTestsFoundInContainer" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/NoTestsFoundInContainer">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No tests are discovered from the container '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoValidSourceFoundForDiscovery" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/NoValidSourceFoundForDiscovery">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>None of the specified source(s) '{0}' is valid. Fix the above errors/warnings and then try again. </Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NumberOfTestCasesCannotBeLessThanOne" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/NumberOfTestCasesCannotBeLessThanOne">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>There should be at least  one test to retrieve.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="QueueAlreadyDisposed" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/QueueAlreadyDisposed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The {0} queue has already been disposed.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="QueuePausedDisposeError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/QueuePausedDisposeError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The {0} queue cannot be disposed while paused.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RunSettingsAlreadyLoaded" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/RunSettingsAlreadyLoaded">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The Run Settings have already been loaded.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RunSettingsParseError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/RunSettingsParseError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An error occurred while loading the run settings.  Error: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ServiceSecurityUserNotAllowed" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/ServiceSecurityUserNotAllowed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>You are not authorized to perform this operation.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SettingsNodeInvalidName" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/SettingsNodeInvalidName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid settings node specified. The name property of the settings node must be non-empty.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SettingsProviderInitializationError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/SettingsProviderInitializationError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An error occurred while initializing the settings provider named '{0}'. Error: {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SettingsProviderNotFound" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/SettingsProviderNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Settings Provider named '{0}' was not found.  The settings can not be loaded.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="StartIndexShouldBeNonNegative" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/StartIndexShouldBeNonNegative">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Starting index from which test cases are retrieved should be non-negative.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="StringSeperator" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/StringSeperator">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>, </Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCaseFilterFormatException" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/TestCaseFilterFormatException">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Incorrect format for TestCaseFilter {0}. Specify the correct format and try again. Note that the incorrect format can lead to no test getting executed.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestLoggerQueueName" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/TestLoggerQueueName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Test Logger</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestRunFailed_NoTestsAreAvailableInTheSources" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/TestRunFailed_NoTestsAreAvailableInTheSources">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No test is available in {0}. Make sure that installed test discoverers &amp; executors, platform &amp; framework version settings are appropriate and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnsupportedPropertiesInTestCaseFilter" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/UnsupportedPropertiesInTestCaseFilter">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No tests matched the filter because it contains one or more properties that are not valid ({0}). Specify filter expression containing valid properties ({1}) and try again.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WeakEventsOnlyInstanceMethodsSupportedExceptionText" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.Core.Resources/WeakEventsOnlyInstanceMethodsSupportedExceptionText">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A test method must be an instance method.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.VisualStudio.TestPlatform.ObjectModel.CommonResources">
+			<NamedResource name="CannotBeNullOrEmpty" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.CommonResources/CannotBeNullOrEmpty">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The parameter cannot be null or empty.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DisplayChosenSettings" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.CommonResources/DisplayChosenSettings">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Test run will use DLL(s) built for framework {0} and platform {1}. Following DLL(s) will not be part of run: {2} Go to {3} for more details on managing these settings.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FileNotFound" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.CommonResources/FileNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not find file {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoMatchingSourcesFound" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.CommonResources/NoMatchingSourcesFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>None of the provided test containers match the Platform Architecture and .Net Framework settings for the test run. Platform: {0}  .Net Framework: {1}. Go to http://go.microsoft.com/fwlink/?LinkID=330428 for more details on managing these settings.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.VisualStudio.TestPlatform.ObjectModel.EqtMessages">
+			<NamedResource name="Common_CommaSeparate" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.EqtMessages/Common_CommaSeparate">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0}, {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Common_EqtTraceReachedMaxEventLogEntries" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.EqtMessages/Common_EqtTraceReachedMaxEventLogEntries">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>EqtTrace has reached the maximum number of messages to log to the event log. Next message(s) will not be logged.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Common_Indent" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.EqtMessages/Common_Indent">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>     {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Common_MustBeGreaterThanZero" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.EqtMessages/Common_MustBeGreaterThanZero">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The parameter must be greater than zero.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Common_TwoLines_IndentSecond" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.EqtMessages/Common_TwoLines_IndentSecond">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0}
+    {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Utility_IgnoredThrownException" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.EqtMessages/Utility_IgnoredThrownException">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Exception thrown (ignored): {0} {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Utility_ProcessNameWhenCannotGetIt" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.EqtMessages/Utility_ProcessNameWhenCannotGetIt">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>(Error getting process name)</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources">
+			<NamedResource name="BasicTestResultFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/BasicTestResultFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0,-10}  {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ConverterNotSupported" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/ConverterNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot find TypeConverter for type {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CouldNotFindXmlNode" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/CouldNotFindXmlNode">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not find '{0}' node</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Exception_RegisteredTestPropertyHasDifferentValueType" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/Exception_RegisteredTestPropertyHasDifferentValueType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot register property '{0}' as value type '{1}' because it was already registered as '{2}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidRunSettingsRootNode" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/InvalidRunSettingsRootNode">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The root node of the run settings must be named 'RunSettings'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidSettingsIncorrectValue" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/InvalidSettingsIncorrectValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid settings '{0}'. Invalid value '{1}' specified for '{2}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidSettingsXmlAttribute" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/InvalidSettingsXmlAttribute">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid settings '{0}'. Unexpected XmlAttribute: '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidSettingsXmlElement" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/InvalidSettingsXmlElement">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid settings '{0}'. Unexpected XmlElement: '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingDataCollectorAttributes" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/MissingDataCollectorAttributes">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid data collector settings. Expected attribute '{0}' is missing.  A typical data collector setting would look like &lt;DataCollector uri="dataCollector://Samples/SampleCollector/1.0" assemblyQualifiedName="Samples.SampleCollector.SampleDataCollector, SampleCollectors, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1111111111111111" friendlyName="sampleCollector"&gt;.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoTestCaseFilterForSpecificTests" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/NoTestCaseFilterForSpecificTests">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot specify TestCaseFilter for specific tests run. FilterCriteria is only for run with sources.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NotificationFrequencyIsNotPositive" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/NotificationFrequencyIsNotPositive">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Notification frequency need to be a positive value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NotificationTimeoutIsZero" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/NotificationTimeoutIsZero">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Notification timeout must be greater than zero.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NullString" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/NullString">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>(null)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SolutionDirectoryNotExists" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/SolutionDirectoryNotExists">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Solution directory '{0}' does not exists. Please make sure solution directory specified in runsettings exists and have read permissions for directory.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCasePropertyColumnNumberLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestCasePropertyColumnNumberLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Column Number</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCasePropertyExecutorUriLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestCasePropertyExecutorUriLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Executor URI</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCasePropertyFilePathLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestCasePropertyFilePathLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>File Path</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCasePropertyFullyQualifiedNameLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestCasePropertyFullyQualifiedNameLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>FullyQualifiedName</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCasePropertyIdLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestCasePropertyIdLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>ID</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCasePropertyLineNumberLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestCasePropertyLineNumberLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Line Number</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCasePropertyNameLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestCasePropertyNameLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Name</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCasePropertySourceLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestCasePropertySourceLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Source</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestCasePropertyTraitsLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestCasePropertyTraitsLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Traits</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestFailureMessageFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestFailureMessageFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>  Message: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestFailureStackTraceFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestFailureStackTraceFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>  StackTrace:
+{0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestOutcomeFailed" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestOutcomeFailed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestOutcomeNone" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestOutcomeNone">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>None</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestOutcomeNotFound" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestOutcomeNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>NotFound</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestOutcomePassed" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestOutcomePassed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Passed</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestOutcomeSkipped" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestOutcomeSkipped">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Skipped</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultMessageFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultMessageFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>  {0}:
+{1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultPropertyComputerNameLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultPropertyComputerNameLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Computer Name</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultPropertyDisplayNameLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultPropertyDisplayNameLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>TestResult Display Name</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultPropertyDurationLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultPropertyDurationLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Duration</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultPropertyEndTimeLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultPropertyEndTimeLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>End Time</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultPropertyErrorColumnNumberLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultPropertyErrorColumnNumberLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error Column Number</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultPropertyErrorMessageLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultPropertyErrorMessageLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error Message</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultPropertyErrorStackTraceLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultPropertyErrorStackTraceLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Error Stack Trace</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultPropertyOutcomeLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultPropertyOutcomeLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Outcome</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultPropertyStartTimeLabel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultPropertyStartTimeLabel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Start Time</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestResultTextMessagesFormat" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/TestResultTextMessagesFormat">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>  Test Messages:
+{0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnexpectedTypeOfProperty" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources/UnexpectedTypeOfProperty">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The test property type '{0}' of property '{1}' is not supported. Use one of the supported property type (primitive types, uri, string, string[]) and try again. </Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.VisualStudio.TestPlatform.ObjectModel.ValidateArgStrings">
+			<NamedResource name="Error_ArgumentIsEmpty" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.ValidateArgStrings/Error_ArgumentIsEmpty">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified argument cannot be empty.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Error_ArgumentIsNegative" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.ValidateArgStrings/Error_ArgumentIsNegative">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified argument cannot be negative.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Error_ArgumentNotTypeOf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.ValidateArgStrings/Error_ArgumentNotTypeOf">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified argument must have the following type: {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Error_ArgumentPropertyIsEmpty" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.ValidateArgStrings/Error_ArgumentPropertyIsEmpty">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified argument has the following property, which cannot be an empty string: {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Error_ArgumentPropertyIsNegative" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.ValidateArgStrings/Error_ArgumentPropertyIsNegative">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The  specified argument has the following property, which cannot be negative: {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Error_ArgumentPropertyIsNull" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.ValidateArgStrings/Error_ArgumentPropertyIsNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified argument has the following property, which cannot be null: {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Error_ArgumentPropertyNotTypeOf" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.ObjectModel.ValidateArgStrings/Error_ArgumentPropertyNotTypeOf">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified argument has the following property: {0}. This property must have the following type: {1}.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.VisualStudio.TestPlatform.TestExecutor.Resources">
+			<NamedResource name="AppDomainUnloadedExceptionWithPossibleReason" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.TestExecutor.Resources/AppDomainUnloadedExceptionWithPossibleReason">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0} This can happen if the test(s) started a thread but did not stop it. Make sure that all the threads started by the test(s) are stopped before completion.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataCollectionForRunStoppedCommunicationError" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.TestExecutor.Resources/DataCollectionForRunStoppedCommunicationError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Data collection will be stopped for current test run. WCF Communication channel with DataCollection service is unavailable. </Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EmptyTestCollection" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.TestExecutor.Resources/EmptyTestCollection">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>There should be at least one test in the test run.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoActiveTestRunToCancel" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.TestExecutor.Resources/NoActiveTestRunToCancel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The cancelation of the test run is not possible as there is no test run which is in progress.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TestRunIsAlreadyActive" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.VisualStudio.TestPlatform.TestExecutor.Resources/TestRunIsAlreadyActive">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not execute the tests as there is already an active test run.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Xaml.Interactions">
+			<ResourceMapSubtree name="Strings">
+				<NamedResource name="CallMethodActionValidMethodNotFoundExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/CallMethodActionValidMethodNotFoundExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find method named {0} on object of type {1} that matches the expected signature.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CannotAttachBehaviorMultipleTimesExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/CannotAttachBehaviorMultipleTimesExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An instance of a behavior cannot be attached to more than one object at a time.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CannotFindEventNameExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/CannotFindEventNameExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find an event named {0} on type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionCannotFindPropertyNameExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionCannotFindPropertyNameExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find a property named {0} on type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionCannotSetValueExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionCannotSetValueExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot assign value of type {0} to property {1} of type {2}. The {1} property can be assigned only values of type {2}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionPropertyIsReadOnlyExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionPropertyIsReadOnlyExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Property {0} defined by type {1} does not expose a set method and therefore cannot be modified.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EventNotSupportedExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/EventNotSupportedExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Event {0} is not supported. Consider implementing a custom IBehavior to respond to this event.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="GoToStateActionTargetHasNoStateGroups" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/GoToStateActionTargetHasNoStateGroups">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Target {0} does not define any VisualStateGroups.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidLeftOperand" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/InvalidLeftOperand">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Binding property of type {0} cannot be used with operator {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidOperands" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/InvalidOperands">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Binding property of type {0} and Value property of type {1} cannot be used with operator {2}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidRightOperand" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactions/Strings/InvalidRightOperand">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Value property of type {0} cannot be used with operator {1}.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Xaml.Interactivity">
+			<ResourceMapSubtree name="Strings">
+				<NamedResource name="CannotAttachBehaviorMultipleTimesExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactivity/Strings/CannotAttachBehaviorMultipleTimesExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An instance of a behavior cannot be attached to more than one object at a time.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DuplicateBehaviorInCollectionExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactivity/Strings/DuplicateBehaviorInCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot add an instance of a behavior to a BehaviorCollection more than once.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidAssociatedObjectExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactivity/Strings/InvalidAssociatedObjectExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>AssociatedObject is of type {0} but should be of type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NonActionAddedToActionCollectionExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactivity/Strings/NonActionAddedToActionCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Only IAction types are supported in an ActionCollection.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NonBehaviorAddedToBehaviorCollectionExceptionMessage" uri="ms-resource://bde92871-e2bd-46d0-9726-64a50d54fc8d/Microsoft.Xaml.Interactivity/Strings/NonBehaviorAddedToBehaviorCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Only IBehavior types are supported in a BehaviorCollection.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
