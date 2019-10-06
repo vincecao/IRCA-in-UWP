@@ -1,6 +1,10 @@
 ## IRCA in UWP
 A small project in UWP
 
+[Youtube - finish version](https://www.youtube.com/watch?v=SaSZDem83J0&t=158s)
+
+---
+
 ![](https://github.com/vincecao/IRCA-in-UWP/blob/master/screenshots/2.gif?raw=true)
 
 ---
